@@ -5,10 +5,117 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<link rel="stylesheet" href="styles/output.css" />
+		<link rel="stylesheet" href="styles.css" />
 		<title>Police Bikes</title>
 	</head>
 	<body>
-      hello world
-   </body>
+		<!-- Navbar -->
+		<header>
+			<nav class="navbar">
+				<div class="navbar__site-name">POLICEBIKES</div>
+				<ul class="navbar__menu">
+					<li class="navbar__menu-item">
+						<a href="#" class="navbar__menu-link">Home</a>
+					</li>
+					<li class="navbar__menu-item">
+						<a href="#" class="navbar__menu-link">Conversion</a>
+					</li>
+					<li class="navbar__menu-item">
+						<a href="#" class="navbar__menu-link">Restoration</a>
+					</li>
+				</ul>
+				<button class="navbar__menu-button">Nav</button>
+			</nav>
+		</header>
+
+		<main>
+			<!-- Intro -->
+			<div class="intro">
+				<div class="intro__content">
+					<h1 class="intro__header">
+						Police motorcycle restoration and conversion
+					</h1>
+					<p class="intro__text">
+						Here at policebikes.com.au, we have a passion for ex-police
+						motorcycles and specialise in providing conversion and restoration
+						work to these vehicles.
+					</p>
+					<button class="intro__contact-button">Contact Us</button>
+				</div>
+			</div>
+
+			<!-- Services -->
+			<div class="services">
+				<p class="services__welcome">Welcome to policebikes.com.au</p>
+				<h2 class="services__header">What we do</h2>
+				<p class="services__text">
+					We specialise in two main types of work, those being dual seat
+					conversions and restorations.
+				</p>
+				<!-- Cards -->
+				<div class="services__card-section">
+					<!-- Conversion-card -->
+					<div class="services__card">
+						<img
+							class="services__card-icon"
+							src="img/motorbike.png"
+							alt="Motorcycle conversion icon"
+						/>
+						<h3 class="services__card-header">Police Motorcycle Conversion</h3>
+						<p class="services__card-text">
+							If you own a single seat ex police bike, but want to share the
+							thrill of the road on two wheels with that special someone, you’ll
+							need to add a pillion seat, and fortunately you’ve come to right
+							place, as we’ve been performing these conversions since 2009.
+						</p>
+						<button class="services__card-button">
+							View Conversion Gallery
+						</button>
+					</div>
+					<!-- Divider -->
+					<div class="services__card-divider"><hr /></div>
+					<!-- Restoration-card -->
+					<div class="services__card">
+						<img
+							class="services__card-icon"
+							src="img/police-motorbike.png"
+							alt="Motorcycle restoration icon"
+						/>
+						<h3 class="services__card-header">Police Motorcycle Restoration</h3>
+						<p class="services__card-text">
+							In addition to dual seat motorcycle conversions, we also accept a
+							strictly limited number of police vehicle restoration projects
+							each year. We strive to restore/re-install all the equipment the
+							vehicle would have been fitted out with when it served.
+						</p>
+						<button class="services__card-button">View Restoration Page</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- Conversion -->
+			<div class="conversion">
+				<h2 class="conversion__header">Conversion</h2>
+				<div class="conversion__before-after-section">
+					<ul class="conversion__before-after-links">
+						<li class="conversion__link">Before</li>
+						<li class="conversion__link">After</li>
+					</ul>
+					<div class="conversion__before-after-images">
+						<img
+							src="img/conversion-before.jpg"
+							alt="Image of motorbike prior to finished conversion"
+							class="conversion__image"
+						/>
+						<img
+							src="img/conversion-after.jpg"
+							alt="Image of motorbike after finished conversion"
+							class="conversion__image"
+						/>
+					</div>
+					<p class="conversion__before-after-label">YAMAHA FJR1300</p>
+				</div>
+			</div>
+		</main>
+	</body>
 </html>
