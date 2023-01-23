@@ -18,14 +18,14 @@ h4,
 h5,
 h6,
 p,
-ol,
+/* ol, */
 ul {
 	margin: 0;
 	padding: 0;
 	font-weight: normal;
 }
 
-ol,
+/* ol, */
 ul {
 	list-style: none;
 }
@@ -68,21 +68,28 @@ a:active {
 }
 
 @media (min-width: 768px) {
-   .navbar__menu {
-      display: flex;
-   }
-   .navbar__menu-button {
-      display: none;
-   }
+	.navbar__menu {
+		display: flex;
+	}
+	.navbar__menu-button {
+		display: none;
+	}
 }
-
 
 /* || Services */
 
 .services__card-icon {
-   width: 40px;
-   height: 40px;
+	width: 40px;
+	height: 40px;
 }
 
 /* || Conversion */
 
+/* || Restoration */
+
+/* | Image section */
+
+.restoration__image-section-photo {
+	height: 255px;
+	width: auto;
+}
