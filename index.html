@@ -12,16 +12,16 @@
 		<!-- Navbar -->
 		<header>
 			<nav class="navbar">
-				<div class="navbar__site-name">POLICEBIKES</div>
+				<div class="navbar__site-name"><a href="index.html" title="To POLICEBIKES">POLICEBIKES</a></div>
 				<ul class="navbar__menu">
 					<li class="navbar__menu-item">
-						<a href="#" class="navbar__menu-link">Home</a>
+						<a href="index.html" class="navbar__menu-link" title="To Home">Home</a>
 					</li>
 					<li class="navbar__menu-item">
-						<a href="#" class="navbar__menu-link">Conversion</a>
+						<a href="conversion.html" class="navbar__menu-link" title="To Conversion">Conversion</a>
 					</li>
 					<li class="navbar__menu-item">
-						<a href="#" class="navbar__menu-link">Restoration</a>
+						<a href="#" class="navbar__menu-link" title="To Restoration">Restoration</a>
 					</li>
 				</ul>
 				<button class="navbar__menu-button">Nav</button>
@@ -50,7 +50,7 @@
 			<div class="services">
 				<p class="services__welcome">Welcome to policebikes.com.au</p>
 				<h2 class="services__header">What we do</h2>
-				<p class="services__text">
+				<p class="services__text description-content__text">
 					We specialise in two main types of work, those being dual seat
 					conversions and restorations.
 				</p>
@@ -64,18 +64,22 @@
 							alt="Motorcycle conversion icon"
 						/>
 						<h3 class="services__card-header">Police Motorcycle Conversion</h3>
-						<p class="services__card-text">
+						<p class="services__card-text description-content__text">
 							If you own a single seat ex police bike, but want to share the
 							thrill of the road on two wheels with that special someone, you’ll
 							need to add a pillion seat, and fortunately you’ve come to right
-							place, as we’ve been performing these conversions since 2009.
+							place, as we’ve been performing these conversions
+							<span class="important-paragraph-text">since 2009</span>.
 						</p>
 						<button class="services__card-button primary-button">
 							View Conversion Gallery
 						</button>
 					</div>
 					<!-- Divider -->
-					<div class="services__card-divider divider"><hr /></div>
+					<div class="services__card-divider styled-divider">
+						<hr />
+						<hr />
+					</div>
 					<!-- Restoration-card -->
 					<div class="services__card">
 						<img
@@ -84,7 +88,7 @@
 							alt="Motorcycle restoration icon"
 						/>
 						<h3 class="services__card-header">Police Motorcycle Restoration</h3>
-						<p class="services__card-text">
+						<p class="services__card-text description-content__text">
 							In addition to dual seat motorcycle conversions, we also accept a
 							strictly limited number of police vehicle restoration projects
 							each year. We strive to restore/re-install all the equipment the
@@ -119,6 +123,10 @@
 					</div>
 					<p class="conversion__before-after-label">YAMAHA FJR1300</p>
 				</div>
+				<div class="conversion__divider styled-divider">
+					<hr />
+					<hr />
+				</div>
 				<div class="conversion__models description-content">
 					<h3 class="conversion__models-header description-content__header">
 						Models
@@ -129,9 +137,7 @@
 						the 1970s through to current models, like the FJR1300 and R1200RT.
 					</p>
 				</div>
-				<div class="conversion__divider divider">
-					<hr />
-				</div>
+				<hr class="conversion__divider line-divider" />
 				<div class="conversion__peace-of-mind description-content">
 					<h3
 						class="conversion__peace-of-mind-header description-content__header"
@@ -149,7 +155,7 @@
 			<!-- Safety -->
 			<div class="safety">
 				<div class="safety__content">
-					<p class="safety__text">
+					<p class="safety__text description-content__text">
 						We’ve seen and fixed almost everything that tends to go wrong when
 						these bikes, so your bike will be in safe hands.
 					</p>
@@ -159,6 +165,10 @@
 			<!-- Restoration -->
 			<div class="restoration">
 				<h2 class="restoration__header section-header">Restoration</h2>
+				<div class="restoration__divider-header styled-divider">
+					<hr />
+					<hr />
+				</div>
 				<div class="restoration__evaluation description-content">
 					<h3
 						class="restoration__evaluation-header description-content__header"
@@ -193,6 +203,10 @@
 						alt="Photo of restored police bike on street"
 					/>
 				</div>
+				<div class="conversion__divider-image-section styled-divider">
+					<hr />
+					<hr />
+				</div>
 				<div class="restoration__authentic-equipment description-content">
 					<h3
 						class="restoration__authentic-equipment-header description-content__header"
@@ -205,16 +219,129 @@
 						We strive to restore/re-install all the equipment the vehicle would
 						have been fitted out with when it served, such as:
 					</p>
-						<ol class="restoration__authentic-equipment-list">
-							<li class="authentic-equipment-list__item">Correct Radio(s)</li>
-							<li class="authentic-equipment-list__item">
-								Emergency Signalling Equipment
-							</li>
-							<li class="authentic-equipment-list__item">Signage</li>
-							<li class="authentic-equipment-list__item">Appointments</li>
-						</ol>
+					<ol class="restoration__authentic-equipment-list">
+						<li class="authentic-equipment-list__item">Correct Radio(s)</li>
+						<li class="authentic-equipment-list__item">
+							Emergency Signalling Equipment
+						</li>
+						<li class="authentic-equipment-list__item">Signage</li>
+						<li class="authentic-equipment-list__item">Appointments</li>
+					</ol>
+				</div>
+				<div class="restoration__police-service-research description-content">
+					<h3
+						class="restoration__police-service-research-header description-content__header"
+					>
+						Police Service Research
+					</h3>
+					<p
+						class="restoration__police-service-research-text description-content__text"
+					>
+						Our exhaustive research often results in tracking down the specific
+						details related to police service, such as
+						<span class="important-paragraph-text">Fleet Serial Number</span>,
+						<span class="important-paragraph-text"> Call Sign </span> and
+						<span class="important-paragraph-text">Area of Operation</span>, and
+						sometimes even turns up the original member who piloted the machine!
+					</p>
+					<img
+						src="img/search.png"
+						alt="Icon of research documents with magnifying glass"
+						class="restoration__police-service-research-icon"
+					/>
+				</div>
+				<div
+					class="restoration__police-service-research-divider styled-divider"
+				>
+					<hr />
+					<hr />
 				</div>
 			</div>
+
+			<!-- Contact -->
+			<div class="contact-us">
+				<h2 class="contact-us__header section-header">Contact Us</h2>
+				<p class="contact-us__text description-content__text">
+					If you’re as passionate about your ex police bike as we are, then
+					please get in touch by sending an email to
+					<span class="important-paragraph-text">info@policebikes.com.au</span>
+				</p>
+				<p class="contact-us__text description-content__text">
+					And don't forget to follow us on social media by clicking the links
+					below:
+				</p>
+			</div>
+
+			<!-- Footer -->
+			<footer class="footer">
+				<h2 class="footer__header">POLICEBIKES</h2>
+				<p class="footer__credit">
+					Website designed and developed by Angus Munro
+				</p>
+				<div class="social-media-links">
+					<img
+						class="social-media-links__icon"
+						src="img/facebook-logo.png"
+						alt="Facebook Icon"
+					/>
+					<img
+						class="social-media-links__icon"
+						src="img/instagram-logo.png"
+						alt="Instagram Icon"
+					/>
+				</div>
+				<hr class="footer__divider line-divider" />
+				<p class="footer__copyright">
+					Policebikes.com.au © 2022. All rights reserved.
+				</p>
+				<ul class="footer__attributions">
+					<li class="footer__attributions-item">
+						<a
+							href="https://www.flaticon.com/free-icons/circle"
+							title="circle icons"
+							>Circle icons created by Jagat Icon - Flaticon</a
+						>
+					</li>
+					<li class="footer__attributions-item">
+						<a
+							href="https://www.flaticon.com/free-icons/heart"
+							title="heart icons"
+							>Heart icons created by Freepik - Flaticon</a
+						>
+					</li>
+					<li class="footer__attributions-item">
+						<a
+							href="https://www.flaticon.com/free-icons/research"
+							title="research icons"
+							>Research icons created by rsetiawan - Flaticon</a
+						>
+					</li>
+				</ul>
+				<div class="footer__disclaimer">
+					<p class="footer__disclaimer-text">
+						Disclaimer: Any product names, logos, brands, and other trademarks
+						or images featured or referred to within this website
+						(policebikes.com.au) and/or on any social media forum are the
+						property of their respective trademark holders.
+					</p>
+					<p class="footer__disclaimer-text">
+						We declare no affiliation, sponsorship, nor any partnerships with
+						any registered trademarks. These trademark holders are not
+						affiliated with this website. These trademark holders do not sponsor
+						or endorse this website or any of its products or comments.
+					</p>
+					<p class="footer__disclaimer-text">
+						Further, whilst we work closely with various law enforcement
+						agencies to ensure the accuracy of any restoration work undertaken,
+						policebikes.com.au is not affiliated with, endorsed by, or sponsored
+						by any local, state, or federal government agency.
+					</p>
+					<p class="footer__disclaimer-text">
+						Should you have any questions or concerns please contact
+						info@policebikes.com.au
+					</p>
+				</div>
+			</footer>
 		</main>
 	</body>
 </html>
