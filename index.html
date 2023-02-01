@@ -16,11 +16,11 @@
 	</head>
 	<body>
 		<!-- Navbar -->
-		<header>
+		<header class="header">
 			<nav class="navbar">
-				<div class="navbar__site-name">
-					<a href="index.html" title="To POLICEBIKES">POLICEBIKES</a>
-				</div>
+				<a href="index.html" title="To POLICEBIKES" class="navbar__site-name"
+					>POLICEBIKES</a
+				>
 				<ul class="navbar__menu">
 					<li class="navbar__menu-item">
 						<a href="index.html" class="navbar__menu-link" title="To Home"
@@ -28,25 +28,9 @@
 						>
 					</li>
 					<li class="navbar__menu-item">
-						<a
-							href="conversion.html"
-							class="navbar__menu-link"
-							title="To Conversion"
+						<a href="conversion.html" class="navbar__menu-link" title="To Home"
 							>Conversion</a
 						>
-<<<<<<< Updated upstream
-						<ul class="navbar__conversion-dropdown"><li class="navbar__conversion-dropdown-item"><a href="yamaha-gallery.html">YAMAHA FJR1300</a></li>
-						<li class="navbar__conversion-dropdown-item"><a href="">HONDA ST1300</a></li></ul>
-=======
-						<ul class="navbar__conversion-dropdown">
-							<li class="navbar__conversion-dropdown-item">
-								<a href="yamaha-gallery.html">YAMAHA FJR1300</a>
-							</li>
-							<li class="navbar__conversion-dropdown-item">
-								<a href="honda-gallery.html">HONDA ST1300</a>
-							</li>
-						</ul>
->>>>>>> Stashed changes
 					</li>
 					<li class="navbar__menu-item">
 						<a
@@ -56,12 +40,35 @@
 							>Restoration</a
 						>
 					</li>
+					<li class="navbar__menu-item">
+						<a
+							href=""
+							class="navbar__menu-link navbar__submenu-link"
+							title="To Gallery Menu"
+							>Gallery
+							<span class="dropdown-triangle"></span
+						></a>
+						<ul class="navbar__gallery-dropdown">
+							<li class="navbar__gallery-dropdown-item">
+								<a href="yamaha-gallery.html" title="To YAMAHA FJR1300 gallery"
+									>YAMAHA FJR1300</a
+								>
+							</li>
+							<li class="navbar__gallery-dropdown-item">
+								<a href="" title="HONDA ST1300 gallery">HONDA ST1300</a>
+							</li>
+						</ul>
+					</li>
 				</ul>
-				<button class="navbar__menu-button">Nav</button>
+				<button class="hamburger">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</button>
 			</nav>
 		</header>
 
-		<main>
+		<main class="main">
 			<!-- Intro -->
 			<div class="intro intro-home">
 				<div class="intro__content">
@@ -386,5 +393,7 @@
 				</p>
 			</div>
 		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+		<script src="main.js"></script>
 	</body>
 </html>

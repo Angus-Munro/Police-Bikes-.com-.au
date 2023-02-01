@@ -1,1 +1,26 @@
-@use "partials/utils/variables";
+@import "partials/utils/variables";
+@import "partials/utils/mixins";
+
+@import "partials/base/reset";
+@import "partials/base/base";
+@import "partials/base/typography";
+
+@import "partials/vendors/flaticon";
+
+@import "partials/components/before-after";
+@import "partials/components/buttons";
+@import "partials/components/dividers";
+@import "partials/components/icons";
+@import "partials/components/hamburger";
+@import "partials/components/dropdown-triangle";
+
+@import "partials/layout/intro";
+@import "partials/layout/navbar";
+@import "partials/layout/description-content";
+@import "partials/layout/footer";
+
+@import "partials/pages/home";
+@import "partials/pages/conversion";
+@import "partials/pages/yamaha";
+@import "partials/pages/honda";
+@import "partials/pages/restoration";

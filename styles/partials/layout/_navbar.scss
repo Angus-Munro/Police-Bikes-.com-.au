@@ -1,0 +1,70 @@
+@use "../utils/mixins";
+
+/* || Header and Navigation */
+.header {
+	border-bottom: 1px solid $color-border-primary;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 1.5rem;
+}
+
+.navbar__menu {
+	display: none;
+}
+
+.navbar__menu.active {
+	display: flex;
+	position: fixed;
+	left: -100%;
+	top: 4em;
+	flex-direction: column;
+	background-color: $color-bg-primary;
+	width: 100%;
+	text-align: center;
+	transition: 0.3s;
+	box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+	left: 0;
+   z-index: 1;
+}
+
+.navbar__gallery-dropdown {
+   display: none;
+}
+
+.navbar__gallery-dropdown.active {
+   display: block;
+}
+
+.navbar__menu-item {
+	margin: 1rem 0;
+}
+
+.navbar__menu-link {
+	transition: 0.1s ease-in-out;
+}
+.navbar__menu-link:hover {
+	transition: 0.1s ease-in-out;
+	color: $color-button-primary;
+}
+
+.navbar__submenu-link {
+   position: relative;
+}
+
+@include for-tablet-portrait-up {
+	.navbar__menu {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.navbar__menu-item {
+		margin-left: 5rem;
+	}
+	.navbar__menu-button {
+		display: none;
+	}
+}
