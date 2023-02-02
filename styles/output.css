@@ -38,12 +38,14 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
 button {
   background-color: inherit;
   border: none;
+  font-family: inherit;
+  cursor: pointer;
 }
 
 body {
@@ -66,6 +68,22 @@ h6 {
   margin: 3rem 0;
 }
 
+.site-name {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.primary-button {
+  background-color: #078cf2;
+  color: #FFFFFF;
+  padding: 0.5em 2em;
+  font-size: 1rem;
+}
+
+.services__card-button {
+  width: 100%;
+}
+
 .services__card-icon {
   width: 40px;
   height: 40px;
@@ -73,7 +91,6 @@ h6 {
 
 .hamburger {
   display: block;
-  cursor: pointer;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -131,6 +148,19 @@ h6 {
   display: none;
 }
 
+@media (min-width: 600px) {
+  .navbar__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar__menu-item {
+    margin-left: 5rem;
+  }
+  .navbar__menu-button {
+    display: none;
+  }
+}
 .navbar__menu.active {
   display: flex;
   position: fixed;
@@ -146,16 +176,8 @@ h6 {
   z-index: 1;
 }
 
-.navbar__gallery-dropdown {
-  display: none;
-}
-
-.navbar__gallery-dropdown.active {
-  display: block;
-}
-
 .navbar__menu-item {
-  margin: 1rem 0;
+  margin: 1rem 0 1rem 2rem;
 }
 
 .navbar__menu-link {
@@ -171,20 +193,64 @@ h6 {
   position: relative;
 }
 
-@media (min-width: 600px) {
-  .navbar__menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .navbar__menu-item {
-    margin-left: 5rem;
-  }
-  .navbar__menu-button {
-    display: none;
-  }
+.navbar__gallery-dropdown {
+  display: none;
 }
+
+.navbar__gallery-dropdown.active {
+  display: block;
+}
+
 .description-content__text {
+  margin: 1rem 0;
+}
+
+.footer {
+  padding: 1.5rem 1rem;
+  color: #e6e6e6;
+  background-color: #212121;
+}
+
+.footer__credit {
+  margin: 1rem 0 2rem 0;
+}
+
+.footer__copyright {
+  margin: 1rem 0;
+}
+
+.footer__credit,
+.footer__copyright {
+  font-size: 0.9rem;
+}
+
+.social-media-links {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.social-media-links__icon {
+  height: 32px;
+}
+
+.footer__divider {
+  margin: 1.1rem 0;
+}
+
+.footer__attributions-item {
+  margin: 0.75rem 0;
+}
+
+.footer__attributions-item,
+.footer__disclaimer-text {
+  font-size: 0.8rem;
+}
+
+.footer__disclaimer {
+  margin: 2rem 1rem 1rem 1rem;
+}
+
+.footer__disclaimer-text {
   margin: 1rem 0;
 }
 

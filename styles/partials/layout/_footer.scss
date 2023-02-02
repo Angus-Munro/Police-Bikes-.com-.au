@@ -1,0 +1,46 @@
+.footer {
+	padding: 1.5rem 1rem;
+	color: $color-text-tertiary;
+	background-color: $color-bg-secondary;
+}
+
+.footer__credit {
+	margin: 1rem 0 2rem 0;
+}
+
+.footer__copyright {
+	margin: 1rem 0;
+}
+
+.footer__credit,
+.footer__copyright {
+	font-size: 0.9rem;
+}
+
+.social-media-links {
+	display: flex;
+	gap: 0.75rem;
+}
+.social-media-links__icon {
+	height: 32px;
+}
+
+.footer__divider {
+	margin: 1.1rem 0;
+}
+
+.footer__attributions-item {
+	margin: 0.75rem 0;
+}
+
+.footer__attributions-item,
+.footer__disclaimer-text {
+	font-size: 0.8rem;
+}
+
+.footer__disclaimer {
+	margin: 2rem 1rem 1rem 1rem;
+}
+.footer__disclaimer-text {
+   margin: 1rem 0;
+}

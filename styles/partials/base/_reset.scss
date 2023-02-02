@@ -1,6 +1,6 @@
 html {
 	box-sizing: border-box;
-   font-size: 16px;
+	font-size: 16px;
 }
 
 *,
@@ -38,10 +38,12 @@ a,
 a:visited,
 a:active {
 	text-decoration: none;
-	color: black;
+	color: inherit;
 }
 
 button {
 	background-color: inherit;
 	border: none;
+	font-family: inherit;
+	cursor: pointer;
 }

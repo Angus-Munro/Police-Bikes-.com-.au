@@ -1,1 +1,10 @@
- 
+.primary-button {
+	background-color: $color-button-primary;
+	color: $color-text-secondary;
+	padding: .5em 2em;
+	font-size: 1rem;
+}
+
+.services__card-button {
+   width: 100%;
+}
