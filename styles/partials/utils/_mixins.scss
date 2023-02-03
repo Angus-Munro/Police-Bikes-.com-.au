@@ -1,3 +1,4 @@
+// Media Queries
 @mixin for-tablet-portrait-up {
    @media (min-width: 600px) { @content; }
  }
@@ -10,3 +11,8 @@
  @mixin for-big-desktop-up {
    @media (min-width: 1800px) { @content; }
  }
+
+//  Section Padding
+ @mixin padding-section {
+    padding: 3rem 1rem;
+}

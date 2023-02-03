@@ -1,9 +1,69 @@
 @use "../utils/variables";
 
-// || Layout
+// || Intro
+.intro-home {
+	background-image: url(../../../img/stock-bike-exhaust.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.intro__background-wrapper {
+   @include padding-section;
+	background-color: $color-bg-tertiary;
+}
+.intro__content {
+	color: $color-text-tertiary;
+}
+.intro__text {
+	color: $color-text-tertiary--faded;
+}
 
-// Intro
+// || Services
+.services {
+	@include padding-section;
+	background-color: $color-bg-quaternary;
+}
+.services__intro-section {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+.services__welcome {
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	font-size: 0.8rem;
+}
+.services__header {
+	margin: 1rem 0;
+}
 
-.intro__contact-button {
-   display: inline-block;
+// || Conversion
+.conversion {
+	@include padding-section;
+}
+
+// || Safety
+.safety {
+	@include padding-section;
+	background-color: grey;
+}
+.safety__content {
+	background-color: $color-bg-tertiary--faded;
+	padding: 1rem;
+	border-radius: 5px;
+}
+.safety__text {
+	color: $color-text-tertiary;
+}
+
+// || Restoration
+.restoration {
+	@include padding-section;
+}
+
+// || Contact Us
+.contact-us {
+	@include padding-section;
+	background-color: $color-bg-quaternary;
+	text-align: center;
 }

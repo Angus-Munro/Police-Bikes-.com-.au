@@ -61,16 +61,14 @@ h6 {
   font-weight: 600;
 }
 
-.main {
-  margin: 0 1rem;
-}
-.main > div {
-  margin: 3rem 0;
-}
-
 .site-name {
   font-size: 1rem;
   font-weight: normal;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .primary-button {
@@ -130,6 +128,10 @@ h6 {
   vertical-align: middle;
 }
 
+.styled-divider {
+  visibility: hidden;
+}
+
 .intro__content {
   text-align: center;
 } /* || Header and Navigation */
@@ -141,7 +143,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 1rem;
 }
 
 .navbar__menu {
@@ -254,8 +256,74 @@ h6 {
   margin: 1rem 0;
 }
 
-.intro__contact-button {
-  display: inline-block;
+.intro-home {
+  background-image: url(../../../img/stock-bike-exhaust.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.intro__background-wrapper {
+  padding: 3rem 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.intro__content {
+  color: #e6e6e6;
+}
+
+.intro__text {
+  color: rgba(230, 230, 230, 0.8);
+}
+
+.services {
+  padding: 3rem 1rem;
+  background-color: #e6e6e6;
+}
+
+.services__intro-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.services__welcome {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+}
+
+.services__header {
+  margin: 1rem 0;
+}
+
+.conversion {
+  padding: 3rem 1rem;
+}
+
+.safety {
+  padding: 3rem 1rem;
+  background-color: grey;
+}
+
+.safety__content {
+  background-color: rgba(24, 24, 24, 0.7058823529);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.safety__text {
+  color: #e6e6e6;
+}
+
+.restoration {
+  padding: 3rem 1rem;
+}
+
+.contact-us {
+  padding: 3rem 1rem;
+  background-color: #e6e6e6;
+  text-align: center;
 }
 
 /*# sourceMappingURL=output.css.map */

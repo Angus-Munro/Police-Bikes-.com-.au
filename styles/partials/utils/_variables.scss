@@ -1,14 +1,16 @@
 // || Colors
 $color-bg-primary: #fafafa;
 $color-bg-secondary: #212121;
-$color-bg-tertiary: #000000dc;
-$color-bg-tertiary--faded: #181818ea;
+$color-bg-tertiary: rgba(0, 0, 0, 0.8);
+$color-bg-tertiary--faded: #181818b4;
+$color-bg-quaternary: #e6e6e6;
 $color-bg-accent: #ffffff80;
 
 $color-text-primary: #212121;
 $color-text-primary--faded: #21212179;
 $color-text-secondary: #FFFFFF;
 $color-text-tertiary: #e6e6e6;
+$color-text-tertiary--faded: #e6e6e6cc;
 
 $color-border-primary: #E2E8F0;
 
