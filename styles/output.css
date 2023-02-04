@@ -257,10 +257,7 @@ h6 {
 }
 
 .intro-home {
-  background-image: url(../../../img/stock-bike-exhaust.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url(../../../img/stock-bike-exhaust.jpg) center/cover no-repeat;
 }
 
 .intro__background-wrapper {
@@ -302,12 +299,12 @@ h6 {
 }
 
 .safety {
-  padding: 3rem 1rem;
-  background-color: grey;
+  padding: 1.5rem 1rem;
+  background: url(../../../img/stock-bike-seat.jpg) center/cover no-repeat;
 }
 
 .safety__content {
-  background-color: rgba(24, 24, 24, 0.7058823529);
+  background-color: rgba(24, 24, 24, 0.8705882353);
   padding: 1rem;
   border-radius: 5px;
 }

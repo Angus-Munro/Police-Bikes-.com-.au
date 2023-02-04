@@ -2,13 +2,10 @@
 
 // || Intro
 .intro-home {
-	background-image: url(../../../img/stock-bike-exhaust.jpg);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+	@include image-background("stock-bike-exhaust.jpg");
 }
 .intro__background-wrapper {
-   @include padding-section;
+	@include padding-section;
 	background-color: $color-bg-tertiary;
 }
 .intro__content {
@@ -44,8 +41,8 @@
 
 // || Safety
 .safety {
-	@include padding-section;
-	background-color: grey;
+	@include padding-section(1.5rem, 1rem);
+	@include image-background("stock-bike-seat.jpg");
 }
 .safety__content {
 	background-color: $color-bg-tertiary--faded;
