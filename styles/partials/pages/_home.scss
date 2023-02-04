@@ -38,6 +38,10 @@
 .conversion {
 	@include padding-section;
 }
+.conversion__before-after-label {
+	font-size: 0.8rem;
+}
+
 
 // || Safety
 .safety {

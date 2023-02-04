@@ -45,6 +45,7 @@ button {
   background-color: inherit;
   border: none;
   font-family: inherit;
+  font-size: inherit;
   cursor: pointer;
 }
 
@@ -69,6 +70,25 @@ h6 {
 .section-header {
   text-align: center;
   margin-bottom: 1.5rem;
+}
+
+.before-after-list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0.5rem;
+}
+
+.before-after-button {
+  padding: 0.5rem;
+  transition: border 250ms ease-in-out;
+}
+
+.before-after-button--inactive:hover {
+  border-bottom: 2px solid grey;
+}
+
+.before-after-button--active {
+  border-bottom: 2px solid #078cf2;
 }
 
 .primary-button {
@@ -296,6 +316,10 @@ h6 {
 
 .conversion {
   padding: 3rem 1rem;
+}
+
+.conversion__before-after-label {
+  font-size: 0.8rem;
 }
 
 .safety {
