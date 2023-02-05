@@ -80,15 +80,55 @@ h6 {
 
 .before-after-button {
   padding: 0.5rem;
-  transition: border 250ms ease-in-out;
-}
-
-.before-after-button--inactive:hover {
-  border-bottom: 2px solid grey;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
 }
 
 .before-after-button--active {
   border-bottom: 2px solid #078cf2;
+}
+
+.before-after-button--active:hover {
+  border-color: #078cf2;
+}
+
+.before-after-button:not(.before-after-button--active) {
+  color: rgba(33, 33, 33, 0.4745098039);
+}
+
+.before-after-button:not(.before-after-button--active):hover {
+  border-color: rgba(33, 33, 33, 0.4745098039);
+}
+
+.before-after-button,
+.before-after-button--active {
+  transition: border 250ms ease-in-out;
+}
+
+.before-after-image-wrapper {
+  position: relative;
+  margin-right: 2rem;
+}
+
+.before-after-image {
+  cursor: pointer;
+  border-radius: 3px;
+  transition: opacity 100ms ease-in-out;
+}
+
+.before-after-image--active {
+  position: relative;
+  z-index: 2;
+}
+
+.before-after-image:not(.before-after-image--active) {
+  opacity: 0.5;
+}
+
+.after-image {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 2rem;
 }
 
 .primary-button {
