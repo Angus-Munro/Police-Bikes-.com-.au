@@ -23,6 +23,10 @@
 //  Section Padding
 @mixin padding-section($topBottom: 3rem, $leftRight: 1rem) {
 	padding: $topBottom $leftRight;
+
+	// @include for-tablet-landscape-up {
+	// 	padding: ($topBottom * 2) ($leftRight * 2);
+	// }
 }
 
 // Image Background styles

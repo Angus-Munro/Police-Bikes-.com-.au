@@ -7,18 +7,17 @@
 
 @import "partials/vendors/flaticon";
 
+@import "partials/layout/intro";
+@import "partials/layout/navbar";
+@import "partials/layout/description-content";
+@import "partials/layout/footer";
+
 @import "partials/components/before-after";
 @import "partials/components/buttons";
 @import "partials/components/dividers";
 @import "partials/components/icons";
 @import "partials/components/hamburger";
 @import "partials/components/dropdown-triangle";
-@import "partials/components/styled-divider";
-
-@import "partials/layout/intro";
-@import "partials/layout/navbar";
-@import "partials/layout/description-content";
-@import "partials/layout/footer";
 
 @import "partials/pages/home";
 @import "partials/pages/conversion";

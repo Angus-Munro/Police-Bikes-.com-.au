@@ -51,6 +51,7 @@ button {
 
 body {
   font-family: "Inter", sans-serif;
+  line-height: 1.6;
 }
 
 h1,
@@ -70,126 +71,6 @@ h6 {
 .section-header {
   text-align: center;
   margin-bottom: 1.5rem;
-}
-
-.before-after-list {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 0.5rem;
-}
-
-.before-after-button {
-  padding: 0.5rem;
-  border-bottom: 2px solid rgba(255, 255, 255, 0);
-}
-
-.before-after-button--active {
-  border-bottom: 2px solid #078cf2;
-}
-
-.before-after-button--active:hover {
-  border-color: #078cf2;
-}
-
-.before-after-button:not(.before-after-button--active) {
-  color: rgba(33, 33, 33, 0.4745098039);
-}
-
-.before-after-button:not(.before-after-button--active):hover {
-  border-color: rgba(33, 33, 33, 0.4745098039);
-}
-
-.before-after-button,
-.before-after-button--active {
-  transition: border 250ms ease-in-out;
-}
-
-.before-after-image-wrapper {
-  position: relative;
-  margin-right: 2rem;
-}
-
-.before-after-image {
-  cursor: pointer;
-  border-radius: 3px;
-  transition: opacity 100ms ease-in-out;
-}
-
-.before-after-image--active {
-  position: relative;
-  z-index: 2;
-}
-
-.before-after-image:not(.before-after-image--active) {
-  opacity: 0.5;
-}
-
-.after-image {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 2rem;
-}
-
-.primary-button {
-  background-color: #078cf2;
-  color: #FFFFFF;
-  padding: 0.5em 2em;
-  font-size: 1rem;
-}
-
-.services__card-button {
-  width: 100%;
-}
-
-.services__card-icon {
-  width: 40px;
-  height: 40px;
-}
-
-.hamburger {
-  display: block;
-}
-
-.hamburger.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
-
-@media (min-width: 600px) {
-  .hamburger {
-    display: none;
-  }
-}
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #101010;
-}
-
-.dropdown-triangle {
-  display: inline-block;
-  height: 0;
-  width: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid black;
-  vertical-align: middle;
-}
-
-.styled-divider {
-  visibility: hidden;
 }
 
 .intro__content {
@@ -316,6 +197,174 @@ h6 {
   margin: 1rem 0;
 }
 
+.before-after-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 900px) {
+  .before-after-content-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+  }
+}
+.before-after-image-tab-section {
+  max-width: 512px;
+}
+
+.before-after-list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0.5rem;
+}
+
+.before-after-button {
+  padding: 0.5rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+
+.before-after-button--active {
+  border-bottom: 2px solid #078cf2;
+}
+
+.before-after-button--active:hover {
+  border-color: #078cf2;
+}
+
+.before-after-button:not(.before-after-button--active) {
+  color: rgba(33, 33, 33, 0.4745098039);
+}
+
+.before-after-button:not(.before-after-button--active):hover {
+  border-color: rgba(33, 33, 33, 0.4745098039);
+}
+
+.before-after-button,
+.before-after-button--active {
+  transition: border 250ms ease-in-out;
+}
+
+.before-after-image-wrapper {
+  position: relative;
+  margin-right: 2rem;
+}
+
+.before-after-image {
+  cursor: pointer;
+  border-radius: 3px;
+  transition: opacity 100ms ease-in-out;
+}
+
+.before-after-image--active {
+  position: relative;
+  z-index: 2;
+}
+
+.before-after-image:not(.before-after-image--active) {
+  opacity: 0.5;
+}
+
+.after-image {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 2rem;
+}
+
+.description-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 42rem;
+}
+
+@media (min-width: 900px) {
+  .description-content-wrapper {
+    max-width: 40%;
+  }
+}
+.before-after-description-content__text {
+  margin-bottom: 0;
+}
+
+.primary-button {
+  background-color: #078cf2;
+  color: #FFFFFF;
+  padding: 0.5em 2em;
+  font-size: 1rem;
+}
+
+.services__card-button {
+  width: 100%;
+}
+
+.styled-divider {
+  visibility: hidden;
+}
+
+.unstyled-divider {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.unstyled-horizontal-divider {
+  height: 2px;
+  width: 100%;
+}
+
+.unstyled-vertical-divider {
+  height: 3rem;
+  width: 2px;
+}
+
+.services__card-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.hamburger {
+  display: block;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (min-width: 600px) {
+  .hamburger {
+    display: none;
+  }
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.dropdown-triangle {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+  vertical-align: middle;
+}
+
 .intro-home {
   background: url(../../../img/stock-bike-exhaust.jpg) center/cover no-repeat;
 }
@@ -420,30 +469,22 @@ h6 {
   margin-top: 1rem;
 }
 
-.authentic-equipment-list__item-vertical-line,
-.authentic-equipment-list__item-horizontal-line {
+.authentic-equipment-list__item-vertical-line {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.authentic-equipment-list__item-vertical-line {
-  height: 3rem;
-  width: 2px;
+.authentic-equipment-list__item-unstyled-vertical-divider {
   align-self: center;
   visibility: hidden;
 }
 
 @media (min-width: 600px) {
-  .authentic-equipment-list__item-vertical-line {
+  .authentic-equipment-list__item-unstyled-vertical-divider {
     visibility: visible;
   }
 }
-.authentic-equipment-list__item-horizontal-line {
-  height: 2px;
-  width: 100%;
-}
-
 @media (min-width: 600px) {
-  .authentic-equipment-list__item-horizontal-line {
+  .authentic-equipment-list__item-unstyled-horizontal-divider {
     visibility: hidden;
   }
 }
