@@ -1,0 +1,18 @@
+// Styled Divider
+.styled-divider {
+	visibility: hidden;
+}
+
+// Unstyled Dividers
+.unstyled-divider {
+	background-color: $color-bg-tertiary;
+}
+
+.unstyled-horizontal-divider {
+	height: 2px;
+	width: 100%;
+}
+.unstyled-vertical-divider {
+	height: 3rem;
+	width: 2px;
+}

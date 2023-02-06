@@ -77,7 +77,6 @@
 	.restoration__authentic-equipment-list {
 		grid-template-columns: auto auto auto auto;
 	}
-
 }
 
 .authentic-equipment-list__item {
@@ -100,32 +99,24 @@
 	margin-top: 1rem;
 }
 
-.authentic-equipment-list__item-vertical-line,
-.authentic-equipment-list__item-horizontal-line {
+.authentic-equipment-list__item-vertical-line {
 	background-color: $color-bg-tertiary;
 }
-.authentic-equipment-list__item-vertical-line {
-	height: 3rem;
-	width: 2px;
+.authentic-equipment-list__item-unstyled-vertical-divider {
 	align-self: center;
 	visibility: hidden;
 }
 @include for-tablet-portrait-up {
-	.authentic-equipment-list__item-vertical-line {
+	.authentic-equipment-list__item-unstyled-vertical-divider {
 		visibility: visible;
 	}
 }
 
-.authentic-equipment-list__item-horizontal-line {
-	height: 2px;
-	width: 100%;
-}
 @include for-tablet-portrait-up {
-	.authentic-equipment-list__item-horizontal-line {
+	.authentic-equipment-list__item-unstyled-horizontal-divider {
 		visibility: hidden;
 	}
 }
-
 
 // || Contact Us
 .contact-us {
