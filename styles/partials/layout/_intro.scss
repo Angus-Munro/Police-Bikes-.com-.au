@@ -1,3 +1,20 @@
+.intro__background-wrapper {
+	@include padding-section;
+	background-color: $color-bg-tertiary;
+}
+
+.intro__content,
+.intro__text {
+	color: $color-text-tertiary;
+}
+
 .intro__content {
-   text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.intro__text {
+	max-width: 40ch;
 }

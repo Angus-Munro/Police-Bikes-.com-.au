@@ -1,7 +1,6 @@
 // || Typography
 body {
 	font-family: $font-family;
-	line-height: 1.6;
 }
 
 h1,
@@ -11,4 +10,8 @@ h4,
 h5,
 h6 {
 	font-weight: 600;
+}
+
+p {
+	line-height: 1.6;
 }

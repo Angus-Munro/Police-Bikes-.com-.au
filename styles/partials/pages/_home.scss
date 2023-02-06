@@ -4,23 +4,18 @@
 .intro-home {
 	@include image-background("stock-bike-exhaust.jpg");
 }
-.intro__background-wrapper {
-	@include padding-section;
-	background-color: $color-bg-tertiary;
-}
-.intro__content {
-	color: $color-text-tertiary;
-}
-.intro__text {
+.intro__text-home {
 	color: $color-text-tertiary--faded;
 }
-
 // || Services
 .services {
 	@include padding-section;
 	background-color: $color-bg-quaternary;
 }
 .services__intro-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	text-align: center;
 	margin-bottom: 2rem;
 }
@@ -32,6 +27,22 @@
 }
 .services__header {
 	margin: 1rem 0;
+}
+.services__text {
+	max-width: 40ch;
+}
+
+// Services Card
+.services__card-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+@include for-tablet-landscape-up {
+	.services__card-section {
+		flex-direction: row;
+	}
 }
 
 // || Conversion
