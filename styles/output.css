@@ -76,6 +76,10 @@ p {
   margin-bottom: 1.5rem;
 }
 
+.important-paragraph-text {
+  font-weight: bold;
+}
+
 .intro__background-wrapper {
   padding: 3rem 1rem;
   background-color: rgba(0, 0, 0, 0.8);
@@ -314,6 +318,7 @@ p {
 
 @media (min-width: 900px) {
   .description-content-wrapper {
+    width: 50%;
     max-width: 50ch;
   }
 }
