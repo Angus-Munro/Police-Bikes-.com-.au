@@ -1,6 +1,5 @@
 $(document).ready(function () {
 	// || Navbar Hamburger Menu
-
 	$(".hamburger").on("click", mobileMenu);
 
 	function mobileMenu() {
@@ -13,8 +12,24 @@ $(document).ready(function () {
 		e.stopPropagation();
 		$(".navbar__gallery-dropdown").toggleClass("active");
 	});
-
-	// $(".navbar__menu-link").forEach((n) => n.on("click", closeMenu));
+	//
+	// Change to inline Navbar Menu at larger screen sizes
+	function removeActiveClassAtWidth() {
+		if ($(window).width() >= 600) {
+			$(".navbar__menu, .navbar__gallery-dropdown, .hamburger").removeClass(
+				"active"
+			);
+		}
+	}
+	$(window).on("resize", removeActiveClassAtWidth);
+	removeActiveClassAtWidth();
+	//
+	// Hide navbar dropdown off-click event
+	$(".main").on("click", function () {
+		$(".navbar__menu, .navbar__gallery-dropdown, .hamburger").removeClass(
+			"active"
+		);
+	});
 
 	// || Before-after Tab Toggle
 	$(".before-after-image, .before-after-button").on("click", function () {

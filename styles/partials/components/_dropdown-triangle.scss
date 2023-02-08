@@ -1,9 +1,13 @@
 .dropdown-triangle {
-   display: inline-block;
-   height: 0;
-   width: 0;
-   border-left: 5px solid transparent;
-   border-right: 5px solid transparent;
-   border-top: 5px solid black;
-   vertical-align: middle;
+	display: inline-block;
+	height: 0;
+	width: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid $color-bg-tertiary;
+	vertical-align: middle;
+}
+
+a:hover .dropdown-triangle {
+	border-top: 5px solid $color-text-secondary;
 }

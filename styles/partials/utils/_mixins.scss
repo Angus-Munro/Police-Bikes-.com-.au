@@ -33,3 +33,14 @@
 @mixin image-background($imgUrl) {
 	background: url(../../../img/#{$imgUrl}) center / cover no-repeat;
 }
+
+// Navbar element hover styling
+@mixin navbar-hover {
+	background-color: $color-bg-tertiary;
+	color: $color-text-secondary;
+}
+
+// Navbar box-shadow
+@mixin navbar-box-shadow {
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}

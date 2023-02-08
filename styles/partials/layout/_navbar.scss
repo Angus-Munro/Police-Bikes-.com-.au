@@ -1,15 +1,31 @@
 @use "../utils/mixins";
 
 /* || Header and Navigation */
+
 .header {
-	border-bottom: 1px solid $color-border-primary;
+	width: 100%;
+	z-index: 4;
+	position: sticky;
+	background-color: $color-bg-primary;
+	@include navbar-box-shadow;
+	top: 0;
 }
 
 .navbar {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	max-width: 70rem;
+	padding: 0 1rem;
+	margin: 0 auto;
+}
+
+.navbar__site-name {
+	display: inline-block;
 	padding: 1rem;
+	transition: 0.1s ease-in-out;
+}
+.navbar__site-name:hover {
+	@include navbar-hover;
 }
 
 .navbar__menu {
@@ -33,38 +49,66 @@
 .navbar__menu.active {
 	display: flex;
 	position: fixed;
-	left: -100%;
-	top: 4em;
+	top: 3.25rem;
 	flex-direction: column;
 	background-color: $color-bg-primary;
 	width: 100%;
 	text-align: center;
 	transition: 0.3s;
-	box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+	@include navbar-box-shadow;
 	left: 0;
-	z-index: 1;
+	z-index: 3;
 }
 
 .navbar__menu-item {
-	margin: 1rem 0 1rem 2rem;
+	margin: 0 auto;
+}
+.navbar__menu.active .navbar__menu-item {
+	margin: 0;
 }
 
 .navbar__menu-link {
+	display: inline-block;
+	padding: 1rem;
 	transition: 0.1s ease-in-out;
 }
 .navbar__menu-link:hover {
-	transition: 0.1s ease-in-out;
-	color: $color-button-primary;
+	@include navbar-hover;
+}
+.navbar__menu.active .navbar__menu-link {
+	display: block;
 }
 
 .navbar__submenu-link {
 	position: relative;
 }
 
+// Gallery dropdown
 .navbar__gallery-dropdown {
 	display: none;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	background-color: $color-bg-primary;
+	padding: 0.5rem 0;
+	width: 12ch;
+}
+@include for-tablet-portrait-up {
+	.navbar__gallery-dropdown {
+		left: initial;
+		transform: initial;
+	}
 }
 
 .navbar__gallery-dropdown.active {
 	display: block;
+}
+
+.navbar__gallery-dropdown-item {
+	font-weight: 300;
+	padding: 0.25rem;
+	text-align: center;
+}
+.navbar__gallery-dropdown-item:hover {
+	@include navbar-hover;
 }

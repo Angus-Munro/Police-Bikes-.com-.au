@@ -18,9 +18,9 @@
 		<!-- || Navbar -->
 		<header class="header">
 			<nav class="navbar">
-				<div class="navbar__site-name">
-					<a href="index.html" title="To POLICEBIKES"><h2 class="site-name">POLICEBIKES</h2></a>
-				</div>
+				<a href="index.html" title="To POLICEBIKES" class="navbar__site-name"
+					><h2 class="site-name">POLICEBIKES</h2></a
+				>
 				<ul class="navbar__menu">
 					<li class="navbar__menu-item">
 						<a href="index.html" class="navbar__menu-link" title="To Home"
@@ -28,20 +28,9 @@
 						>
 					</li>
 					<li class="navbar__menu-item">
-						<a
-							href="conversion.html"
-							class="navbar__menu-link"
-							title="To Conversion"
+						<a href="conversion.html" class="navbar__menu-link" title="To Home"
 							>Conversion</a
 						>
-						<ul class="navbar__conversion-dropdown">
-							<li class="navbar__conversion-dropdown-item">
-								<a href="yamaha-gallery.html">YAMAHA FJR1300</a>
-							</li>
-							<li class="navbar__conversion-dropdown-item">
-								<a href="">HONDA ST1300</a>
-							</li>
-						</ul>
 					</li>
 					<li class="navbar__menu-item">
 						<a
@@ -51,8 +40,31 @@
 							>Restoration</a
 						>
 					</li>
+					<li class="navbar__menu-item">
+						<a
+							href=""
+							class="navbar__menu-link navbar__submenu-link"
+							title="To Gallery Menu"
+							>Gallery <span class="dropdown-triangle"></span
+						></a>
+						<ul class="navbar__gallery-dropdown">
+							<li class="navbar__gallery-dropdown-item">
+								<a href="yamaha-gallery.html" title="To YAMAHA FJR1300 gallery"
+									>YAMAHA FJR1300</a
+								>
+							</li>
+							<hr>
+							<li class="navbar__gallery-dropdown-item">
+								<a href="" title="HONDA ST1300 gallery">HONDA ST1300</a>
+							</li>
+						</ul>
+					</li>
 				</ul>
-				<button class="navbar__menu-button">Nav</button>
+				<button class="hamburger">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</button>
 			</nav>
 		</header>
 
