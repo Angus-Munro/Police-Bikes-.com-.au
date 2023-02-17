@@ -150,3 +150,10 @@
 	background-color: $color-bg-quaternary;
 	text-align: center;
 }
+
+.contact-us__primary-button {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: .5rem;
+}

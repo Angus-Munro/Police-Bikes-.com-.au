@@ -80,6 +80,11 @@ p {
   font-weight: bold;
 }
 
+.copy-icon {
+  height: 20px;
+  width: 20px;
+}
+
 .intro__background-wrapper {
   padding: 3rem 1rem;
   background-color: rgba(0, 0, 0, 0.8);
@@ -630,6 +635,13 @@ a:hover .dropdown-triangle {
   padding: 3rem 1rem;
   background-color: #e6e6e6;
   text-align: center;
+}
+
+.contact-us__primary-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 /*# sourceMappingURL=output.css.map */
