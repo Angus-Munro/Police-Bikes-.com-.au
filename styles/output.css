@@ -97,6 +97,10 @@ p {
   text-align: center;
 }
 
+.intro__header {
+  max-width: 22ch;
+}
+
 .intro__text {
   max-width: 40ch;
 }
@@ -470,6 +474,21 @@ a:hover .dropdown-triangle {
   background: url(../../../img/stock-bike-exhaust.jpg) center/cover no-repeat;
 }
 
+.intro__background-wrapper-home {
+  padding: 5rem 1rem;
+}
+
+@media (min-width: 1200px) {
+  .intro__background-wrapper-home {
+    width: 50%;
+  }
+  .intro__content-home {
+    align-items: flex-start;
+    text-align: left;
+    max-width: 500px;
+    margin: auto;
+  }
+}
 .intro__text-home {
   color: rgba(230, 230, 230, 0.8);
 }

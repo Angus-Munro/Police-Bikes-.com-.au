@@ -4,6 +4,21 @@
 .intro-home {
 	@include image-background("stock-bike-exhaust.jpg");
 }
+.intro__background-wrapper-home {
+	@include padding-section($topBottom: 5rem);
+}
+@include for-desktop-up {
+	.intro__background-wrapper-home {
+		width: 50%;
+	}
+	.intro__content-home {
+		align-items: flex-start;
+		text-align: left;
+		max-width: 500px;
+		margin: auto;
+	}
+}
+
 .intro__text-home {
 	color: $color-text-tertiary--faded;
 }
