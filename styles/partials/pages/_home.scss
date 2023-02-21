@@ -28,6 +28,18 @@
 	@include padding-section;
 	background-color: $color-bg-quaternary;
 }
+.services__intro-divider {
+	position: absolute;
+	bottom: 15rem;
+	right: 35rem;
+	gap: 1.5rem;
+}
+.services__intro-divider .styled-subdivider {
+	width: 15rem;
+}
+.services__intro-divider .styled-subdivider-red {
+	transform: translateX(-4rem);
+}
 .services__intro-section {
 	display: flex;
 	flex-direction: column;
@@ -61,11 +73,6 @@
 		gap: 0;
 	}
 }
-
-.services__card-divider .styled-subdivider {
-	width: 50%;
-	height: .5rem;
-}
 .services__card-divider .styled-subdivider-blue {
 	transform: translateX(3rem);
 }
@@ -78,8 +85,8 @@
 		justify-content: center;
 	}
 	.services__card-divider .styled-subdivider {
-		min-height: 10rem;
-		width: .5rem;
+		height: 14rem;
+		width: 0.5rem;
 	}
 	.services__card-divider .styled-subdivider-blue {
 		transform: translateY(3rem);

@@ -80,14 +80,14 @@ p {
   font-weight: bold;
 }
 
-.copy-icon {
-  height: 20px;
-  width: 20px;
-}
-
 .intro__background-wrapper {
   padding: 3rem 2rem;
   background-color: rgba(0, 0, 0, 0.8);
+}
+@media (min-width: 900px) {
+  .intro__background-wrapper {
+    padding: 5rem 2rem;
+  }
 }
 
 .intro__content,
@@ -413,6 +413,8 @@ p {
 
 .styled-subdivider {
   border-radius: 2px;
+  width: 50%;
+  height: 0.5625rem;
 }
 
 .styled-subdivider-blue {
@@ -440,6 +442,11 @@ p {
 .services__card-icon {
   width: 40px;
   height: 40px;
+}
+
+.copy-icon {
+  height: 20px;
+  width: 20px;
 }
 
 .hamburger {
@@ -506,6 +513,11 @@ a:hover .dropdown-triangle {
 .intro__background-wrapper-home {
   padding: 5rem 2rem;
 }
+@media (min-width: 900px) {
+  .intro__background-wrapper-home {
+    padding: 7rem 2rem;
+  }
+}
 
 @media (min-width: 1200px) {
   .intro__background-wrapper-home {
@@ -525,6 +537,26 @@ a:hover .dropdown-triangle {
 .services {
   padding: 3rem 2rem;
   background-color: #e6e6e6;
+}
+@media (min-width: 900px) {
+  .services {
+    padding: 5rem 2rem;
+  }
+}
+
+.services__intro-divider {
+  position: absolute;
+  bottom: 15rem;
+  right: 35rem;
+  gap: 1.5rem;
+}
+
+.services__intro-divider .styled-subdivider {
+  width: 15rem;
+}
+
+.services__intro-divider .styled-subdivider-red {
+  transform: translateX(-4rem);
 }
 
 .services__intro-section {
@@ -563,11 +595,6 @@ a:hover .dropdown-triangle {
     gap: 0;
   }
 }
-.services__card-divider .styled-subdivider {
-  width: 50%;
-  height: 0.5rem;
-}
-
 .services__card-divider .styled-subdivider-blue {
   transform: translateX(3rem);
 }
@@ -582,7 +609,7 @@ a:hover .dropdown-triangle {
     justify-content: center;
   }
   .services__card-divider .styled-subdivider {
-    min-height: 10rem;
+    height: 14rem;
     width: 0.5rem;
   }
   .services__card-divider .styled-subdivider-blue {
@@ -595,6 +622,11 @@ a:hover .dropdown-triangle {
 .conversion {
   padding: 3rem 2rem;
 }
+@media (min-width: 900px) {
+  .conversion {
+    padding: 5rem 2rem;
+  }
+}
 
 .conversion__before-after-label {
   font-size: 0.8rem;
@@ -603,6 +635,11 @@ a:hover .dropdown-triangle {
 .safety {
   padding: 1.5rem 1rem;
   background: url(../../../img/stock-bike-seat.jpg) center/cover no-repeat;
+}
+@media (min-width: 900px) {
+  .safety {
+    padding: 3.5rem 1rem;
+  }
 }
 
 .safety__content {
@@ -617,6 +654,11 @@ a:hover .dropdown-triangle {
 
 .restoration {
   padding: 3rem 2rem;
+}
+@media (min-width: 900px) {
+  .restoration {
+    padding: 5rem 2rem;
+  }
 }
 
 .restoration__authentic-equipment-list {
@@ -681,6 +723,11 @@ a:hover .dropdown-triangle {
   padding: 3rem 2rem;
   background-color: #e6e6e6;
   text-align: center;
+}
+@media (min-width: 900px) {
+  .contact-us {
+    padding: 5rem 2rem;
+  }
 }
 
 .contact-us__primary-button {
