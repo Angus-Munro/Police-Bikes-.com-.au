@@ -389,14 +389,12 @@ p {
   color: #FFFFFF;
   padding: 0.5em 2em;
   font-size: 1rem;
-  border: 2px solid rgba(0, 0, 0, 0);
   transition: background-color 0.1s ease-in-out;
 }
 
 .primary-button:hover {
   color: #078cf2;
   background-color: #FFFFFF;
-  border: 2px solid #078cf2;
 }
 
 .services__card-button {
