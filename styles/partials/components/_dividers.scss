@@ -1,6 +1,19 @@
 // Styled Divider
 .styled-divider {
-	visibility: hidden;
+	display: flex;
+	flex-direction: column;
+	gap: .5rem;
+	align-items: center;
+	width: 100%;
+}
+.styled-subdivider {
+	border-radius: 2px;
+}
+.styled-subdivider-blue {
+	background-color: $color-design-primary;
+}
+.styled-subdivider-red {
+	background-color: $color-design-secondary;
 }
 
 // Unstyled Dividers

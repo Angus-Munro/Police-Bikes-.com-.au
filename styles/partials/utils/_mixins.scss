@@ -21,7 +21,7 @@
 }
 
 //  Section Padding
-@mixin padding-section($topBottom: 3rem, $leftRight: 1rem) {
+@mixin padding-section($topBottom: 3rem, $leftRight: 2rem) {
 	padding: $topBottom $leftRight;
 }
 

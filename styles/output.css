@@ -86,7 +86,7 @@ p {
 }
 
 .intro__background-wrapper {
-  padding: 3rem 1rem;
+  padding: 3rem 2rem;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -389,12 +389,14 @@ p {
   color: #FFFFFF;
   padding: 0.5em 2em;
   font-size: 1rem;
+  border: 2px solid rgba(0, 0, 0, 0);
   transition: background-color 0.1s ease-in-out;
 }
 
 .primary-button:hover {
   color: #078cf2;
   background-color: #FFFFFF;
+  border: 2px solid #078cf2;
 }
 
 .services__card-button {
@@ -402,7 +404,23 @@ p {
 }
 
 .styled-divider {
-  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  width: 100%;
+}
+
+.styled-subdivider {
+  border-radius: 2px;
+}
+
+.styled-subdivider-blue {
+  background-color: rgba(7, 140, 242, 0.7411764706);
+}
+
+.styled-subdivider-red {
+  background-color: rgba(249, 70, 70, 0.7411764706);
 }
 
 .unstyled-divider {
@@ -486,7 +504,7 @@ a:hover .dropdown-triangle {
 }
 
 .intro__background-wrapper-home {
-  padding: 5rem 1rem;
+  padding: 5rem 2rem;
 }
 
 @media (min-width: 1200px) {
@@ -505,7 +523,7 @@ a:hover .dropdown-triangle {
 }
 
 .services {
-  padding: 3rem 1rem;
+  padding: 3rem 2rem;
   background-color: #e6e6e6;
 }
 
@@ -536,16 +554,46 @@ a:hover .dropdown-triangle {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 600px) {
   .services__card-section {
     flex-direction: row;
+    gap: 0;
+  }
+}
+.services__card-divider .styled-subdivider {
+  width: 50%;
+  height: 0.5rem;
+}
+
+.services__card-divider .styled-subdivider-blue {
+  transform: translateX(3rem);
+}
+
+.services__card-divider .styled-subdivider-red {
+  transform: translateX(-3rem);
+}
+
+@media (min-width: 600px) {
+  .services__card-divider {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .services__card-divider .styled-subdivider {
+    min-height: 10rem;
+    width: 0.5rem;
+  }
+  .services__card-divider .styled-subdivider-blue {
+    transform: translateY(3rem);
+  }
+  .services__card-divider .styled-subdivider-red {
+    transform: translateY(-3rem);
   }
 }
 .conversion {
-  padding: 3rem 1rem;
+  padding: 3rem 2rem;
 }
 
 .conversion__before-after-label {
@@ -568,7 +616,7 @@ a:hover .dropdown-triangle {
 }
 
 .restoration {
-  padding: 3rem 1rem;
+  padding: 3rem 2rem;
 }
 
 .restoration__authentic-equipment-list {
@@ -630,7 +678,7 @@ a:hover .dropdown-triangle {
   }
 }
 .contact-us {
-  padding: 3rem 1rem;
+  padding: 3rem 2rem;
   background-color: #e6e6e6;
   text-align: center;
 }

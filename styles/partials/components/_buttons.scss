@@ -3,13 +3,13 @@
 	color: $color-text-secondary;
 	padding: .5em 2em;
 	font-size: 1rem;
-	// border: 2px solid $color-border-transparent;
+	border: 2px solid $color-border-transparent;
 	transition: background-color .1s ease-in-out;
 }
 .primary-button:hover {
 	color: $color-button-primary;
 	background-color: $color-text-secondary;
-	// border: 2px solid $color-button-primary;
+	border: 2px solid $color-button-primary;
 }
 
 .services__card-button {
