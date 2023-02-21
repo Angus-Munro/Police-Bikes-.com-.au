@@ -301,13 +301,13 @@ p {
   .before-after-content-wrapper {
     flex-direction: row;
     justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .before-after-content-wrapper {
     gap: 5rem;
   }
 }
-.before-after-image-tab-section {
-  max-width: 512px;
-}
-
 .before-after-list {
   display: flex;
   justify-content: space-around;

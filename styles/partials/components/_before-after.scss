@@ -8,12 +8,16 @@
 	.before-after-content-wrapper {
 		flex-direction: row;
 		justify-content: center;
+	}
+}
+@include for-desktop-up {
+	.before-after-content-wrapper {
 		gap: 5rem;
 	}
 }
 
 .before-after-image-tab-section {
-	max-width: 512px;
+	// max-width: 512px;
 }
 
 // Before-after Buttons
