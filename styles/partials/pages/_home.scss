@@ -34,9 +34,6 @@
 	right: 35rem;
 	gap: 1.5rem;
 }
-.services__intro-divider .styled-subdivider {
-	width: 15rem;
-}
 .services__intro-divider .styled-subdivider-red {
 	transform: translateX(-4rem);
 }
@@ -149,6 +146,33 @@
 // || Restoration
 .restoration {
 	@include padding-section;
+	position: relative;
+}
+
+.restoration__divider-header {
+	position: absolute;
+	top: 3rem;
+	left: 20rem;
+	gap: 2rem;
+	transform: rotate(-10deg);
+}
+@include for-tablet-landscape-up {
+	.restoration__divider-header {
+		left: 30rem;
+	}
+}
+@include for-desktop-up {
+	.restoration__divider-header {
+		left: 40rem;
+	}
+}
+@include for-big-desktop-up {
+	.restoration__divider-header {
+		left: 50rem;
+	}
+}
+.restoration__divider-header .styled-subdivider-blue {
+	transform: translateX(2rem);
 }
 
 .restoration__image-section {
@@ -188,6 +212,16 @@
 	.image-section-photo-top-right {
 		border-radius: 0 3px 3px 0;
 	}
+}
+
+.restoration__divider-image-section {
+	margin: 1rem;
+}
+.restoration__divider-image-section .styled-subdivider-blue {
+	transform: translateX(2rem);
+}
+.restoration__divider-image-section .styled-subdivider-red {
+	transform: translateX(-2rem);
 }
 
 // Authentic Equipment List
@@ -264,10 +298,13 @@
 	}
 }
 
-
-
 .restoration__police-service-research-text {
-	max-width: 50ch;
+	max-width: 75ch;
+}
+@include for-desktop-up {
+	.restoration__police-service-research-text {
+		max-width: 50ch;
+	}	
 }
 
 .restoration__police-service-research-icon {
@@ -275,11 +312,40 @@
 	transform: translate(1rem, 1rem);
 }
 
+.restoration__research-divider {
+	position: absolute;
+	bottom: 0;
+	right: 20rem;
+	gap: 1rem;
+	transform: rotate(-10deg);
+}
+@include for-tablet-portrait-up {
+	.restoration__research-divider {
+		right: 25rem;
+	}
+}
+@include for-tablet-landscape-up {
+	.restoration__research-divider {
+		right: 35rem;
+	}
+}
+@include for-desktop-up {
+	.restoration__research-divider {
+		right: 45rem;
+	}
+}
+
+.restoration__research-divider .styled-subdivider-blue {
+	transform: translateX(2rem);
+}
+
 // || Contact Us
 .contact-us {
 	@include padding-section;
 	background-color: $color-bg-quaternary;
 	text-align: center;
+	position: relative;
+	z-index: 1;
 }
 
 .contact-us__primary-button {

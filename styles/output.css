@@ -413,7 +413,7 @@ p {
 
 .styled-subdivider {
   border-radius: 2px;
-  width: 50%;
+  width: 15rem;
   height: 0.5625rem;
 }
 
@@ -561,10 +561,6 @@ a:hover .dropdown-triangle {
   gap: 1.5rem;
 }
 
-.services__intro-divider .styled-subdivider {
-  width: 15rem;
-}
-
 .services__intro-divider .styled-subdivider-red {
   transform: translateX(-4rem);
 }
@@ -695,11 +691,39 @@ a:hover .dropdown-triangle {
 
 .restoration {
   padding: 3rem 2rem;
+  position: relative;
 }
 @media (min-width: 900px) {
   .restoration {
     padding: 5rem 2rem;
   }
+}
+
+.restoration__divider-header {
+  position: absolute;
+  top: 3rem;
+  left: 20rem;
+  gap: 2rem;
+  transform: rotate(-10deg);
+}
+
+@media (min-width: 900px) {
+  .restoration__divider-header {
+    left: 30rem;
+  }
+}
+@media (min-width: 1200px) {
+  .restoration__divider-header {
+    left: 40rem;
+  }
+}
+@media (min-width: 1800px) {
+  .restoration__divider-header {
+    left: 50rem;
+  }
+}
+.restoration__divider-header .styled-subdivider-blue {
+  transform: translateX(2rem);
 }
 
 .restoration__image-section {
@@ -743,6 +767,18 @@ a:hover .dropdown-triangle {
     border-radius: 0 3px 3px 0;
   }
 }
+.restoration__divider-image-section {
+  margin: 1rem;
+}
+
+.restoration__divider-image-section .styled-subdivider-blue {
+  transform: translateX(2rem);
+}
+
+.restoration__divider-image-section .styled-subdivider-red {
+  transform: translateX(-2rem);
+}
+
 .restoration__authentic-equipment-list {
   display: grid;
   grid-template-columns: auto;
@@ -818,18 +854,52 @@ a:hover .dropdown-triangle {
   }
 }
 .restoration__police-service-research-text {
-  max-width: 50ch;
+  max-width: 75ch;
 }
 
+@media (min-width: 1200px) {
+  .restoration__police-service-research-text {
+    max-width: 50ch;
+  }
+}
 .restoration__police-service-research-icon {
   align-self: center;
   transform: translate(1rem, 1rem);
+}
+
+.restoration__research-divider {
+  position: absolute;
+  bottom: 0;
+  right: 20rem;
+  gap: 1rem;
+  transform: rotate(-10deg);
+}
+
+@media (min-width: 600px) {
+  .restoration__research-divider {
+    right: 25rem;
+  }
+}
+@media (min-width: 900px) {
+  .restoration__research-divider {
+    right: 35rem;
+  }
+}
+@media (min-width: 1200px) {
+  .restoration__research-divider {
+    right: 45rem;
+  }
+}
+.restoration__research-divider .styled-subdivider-blue {
+  transform: translateX(2rem);
 }
 
 .contact-us {
   padding: 3rem 2rem;
   background-color: #e6e6e6;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 @media (min-width: 900px) {
   .contact-us {
