@@ -109,13 +109,41 @@
 	@include padding-section(1.5rem, 1rem);
 	@include image-background("stock-bike-seat.jpg");
 }
-.safety__content {
-	background-color: $color-bg-tertiary--faded;
-	padding: 1rem;
-	border-radius: 5px;
+.safety__box-wrapper {
+	display: flex;
+	justify-content: center;
 }
-.safety__text {
+.safety__box-icon-wrapper {
+	background-color: $color-bg-accent;
+	padding: 1rem 3rem;
+	border-radius: 5px 0 0 5px;
+	display: none;
+}
+@include for-tablet-portrait-up {
+	.safety__box-icon-wrapper {
+		display: flex;
+		align-items: center;
+	}
+}
+.safety__icon-image {
+	max-width: initial;
+}
+.safety__box-content {
+	background-color: $color-bg-tertiary--faded;
+	padding: 1rem 3rem;
+	border-radius: 5px;
+	max-width: 60ch;
+	display: flex;
+	align-items: center;
+}
+@include for-tablet-portrait-up {
+	.safety__box-content {
+		border-radius: 0 5px 5px 0;
+	}
+}
+.safety__content-text {
 	color: $color-text-tertiary;
+	font-size: 1.5rem;
 }
 
 // || Restoration
