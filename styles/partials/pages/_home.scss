@@ -151,6 +151,45 @@
 	@include padding-section;
 }
 
+.restoration__image-section {
+	display: flex;
+	flex-direction: column;
+	max-width: 62.5rem;
+}
+@include for-tablet-portrait-up {
+	.restoration__image-section {
+		flex-direction: row;
+	}
+}
+.restoration__image-section-photo {
+	width: 256px;
+	height: 256px;
+	object-fit: cover;
+}
+@include for-tablet-portrait-up {
+	.restoration__image-section-photo {
+		width: 50%;
+		height: auto;
+	}
+}
+
+.image-section-photo-top-left {
+	border-radius: 3px 3px 0 0;
+}
+@include for-tablet-portrait-up {
+	.image-section-photo-top-left {
+		border-radius: 3px 0 0 3px;
+	}
+}
+.image-section-photo-top-right {
+	border-radius: 0 0 3px 3px;
+}
+@include for-tablet-portrait-up {
+	.image-section-photo-top-right {
+		border-radius: 0 3px 3px 0;
+	}
+}
+
 // Authentic Equipment List
 .restoration__authentic-equipment-list {
 	display: grid;
@@ -206,6 +245,34 @@
 	.authentic-equipment-list__item-unstyled-horizontal-divider {
 		visibility: hidden;
 	}
+}
+	//
+
+.restoration__police-service-research {
+	display: flex;
+	flex-direction: column;
+}
+@include for-tablet-landscape-up {
+	.restoration__police-service-research {
+	flex-direction: row;
+	align-items: center;
+	}
+}
+@include for-desktop-up {
+	.restoration__police-service-research {
+		gap: 7.5rem;
+	}
+}
+
+
+
+.restoration__police-service-research-text {
+	max-width: 50ch;
+}
+
+.restoration__police-service-research-icon {
+	align-self: center;
+	transform: translate(1rem, 1rem);
 }
 
 // || Contact Us

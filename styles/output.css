@@ -449,6 +449,11 @@ p {
   width: 142px;
 }
 
+.restoration__police-service-research-icon {
+  width: 75%;
+  max-width: 320px;
+}
+
 .copy-icon {
   height: 20px;
   width: 20px;
@@ -697,6 +702,47 @@ a:hover .dropdown-triangle {
   }
 }
 
+.restoration__image-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 62.5rem;
+}
+
+@media (min-width: 600px) {
+  .restoration__image-section {
+    flex-direction: row;
+  }
+}
+.restoration__image-section-photo {
+  width: 256px;
+  height: 256px;
+  object-fit: cover;
+}
+
+@media (min-width: 600px) {
+  .restoration__image-section-photo {
+    width: 50%;
+    height: auto;
+  }
+}
+.image-section-photo-top-left {
+  border-radius: 3px 3px 0 0;
+}
+
+@media (min-width: 600px) {
+  .image-section-photo-top-left {
+    border-radius: 3px 0 0 3px;
+  }
+}
+.image-section-photo-top-right {
+  border-radius: 0 0 3px 3px;
+}
+
+@media (min-width: 600px) {
+  .image-section-photo-top-right {
+    border-radius: 0 3px 3px 0;
+  }
+}
 .restoration__authentic-equipment-list {
   display: grid;
   grid-template-columns: auto;
@@ -755,6 +801,31 @@ a:hover .dropdown-triangle {
     visibility: hidden;
   }
 }
+.restoration__police-service-research {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .restoration__police-service-research {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .restoration__police-service-research {
+    gap: 7.5rem;
+  }
+}
+.restoration__police-service-research-text {
+  max-width: 50ch;
+}
+
+.restoration__police-service-research-icon {
+  align-self: center;
+  transform: translate(1rem, 1rem);
+}
+
 .contact-us {
   padding: 3rem 2rem;
   background-color: #e6e6e6;
