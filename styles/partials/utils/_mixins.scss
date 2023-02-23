@@ -29,6 +29,11 @@
 	}
 }
 
+// Sub-section Margin
+@mixin margin-subsection($topBottom: .5rem, $leftRight: 0) {
+	margin: $topBottom $leftRight;
+}
+
 // Image Background styles
 @mixin image-background($imgUrl) {
 	background: url(../../../img/#{$imgUrl}) center / cover no-repeat;

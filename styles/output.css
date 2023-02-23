@@ -726,6 +726,29 @@ a:hover .dropdown-triangle {
   transform: translateX(2rem);
 }
 
+.restoration__evaluation-go-ahead-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .restoration__evaluation-go-ahead-wrapper {
+    flex-direction: row;
+    gap: 3rem;
+  }
+  .restoration__evaluation-go-ahead-wrapper div {
+    flex-basis: 50%;
+    max-width: 45ch;
+  }
+}
+.restoration__evaluation {
+  margin: 0.5rem 0;
+}
+
+.restoration__go-ahead {
+  margin: 0.5rem 0;
+}
+
 .restoration__image-section {
   display: flex;
   flex-direction: column;

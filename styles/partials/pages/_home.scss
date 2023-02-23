@@ -175,6 +175,28 @@
 	transform: translateX(2rem);
 }
 
+.restoration__evaluation-go-ahead-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+@include for-tablet-landscape-up {
+	.restoration__evaluation-go-ahead-wrapper {
+		flex-direction: row;
+		gap: 3rem;
+	}
+.restoration__evaluation-go-ahead-wrapper div {
+	flex-basis: 50%;
+	max-width: 45ch;
+}
+	
+}
+.restoration__evaluation {
+	@include margin-subsection;
+}
+.restoration__go-ahead {
+	@include margin-subsection;
+}
+
 .restoration__image-section {
 	display: flex;
 	flex-direction: column;
