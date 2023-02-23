@@ -627,6 +627,7 @@ a:hover .dropdown-triangle {
 }
 .conversion {
   padding: 3rem 2rem;
+  position: relative;
 }
 @media (min-width: 900px) {
   .conversion {
@@ -636,6 +637,27 @@ a:hover .dropdown-triangle {
 
 .conversion__before-after-label {
   font-size: 0.8rem;
+}
+
+.conversion__header-divider {
+  position: absolute;
+  gap: 1.5rem;
+  top: 2.5rem;
+  left: 15rem;
+}
+
+@media (min-width: 900px) {
+  .conversion__header-divider {
+    left: 25rem;
+  }
+}
+@media (min-width: 1200px) {
+  .conversion__header-divider {
+    left: 35rem;
+  }
+}
+.conversion__header-divider .styled-subdivider-red {
+  transform: translateX(2rem);
 }
 
 .safety {

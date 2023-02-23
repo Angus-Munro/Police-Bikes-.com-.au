@@ -96,9 +96,30 @@
 // || Conversion
 .conversion {
 	@include padding-section;
+	position: relative;
 }
 .conversion__before-after-label {
 	font-size: 0.8rem;
+}
+
+.conversion__header-divider {
+	position: absolute;
+	gap: 1.5rem;
+	top: 2.5rem;
+	left: 15rem;
+}
+@include for-tablet-landscape-up {
+	.conversion__header-divider {
+		left: 25rem;
+	}
+}
+@include for-desktop-up {
+	.conversion__header-divider {
+		left: 35rem;
+	}
+}
+.conversion__header-divider .styled-subdivider-red {
+	transform: translateX(2rem);
 }
 
 // || Safety
@@ -184,11 +205,10 @@
 		flex-direction: row;
 		gap: 3rem;
 	}
-.restoration__evaluation-go-ahead-wrapper div {
-	flex-basis: 50%;
-	max-width: 45ch;
-}
-	
+	.restoration__evaluation-go-ahead-wrapper div {
+		flex-basis: 50%;
+		max-width: 45ch;
+	}
 }
 .restoration__evaluation {
 	@include margin-subsection;
@@ -302,7 +322,7 @@
 		visibility: hidden;
 	}
 }
-	//
+//
 
 .restoration__police-service-research {
 	display: flex;
@@ -310,8 +330,8 @@
 }
 @include for-tablet-landscape-up {
 	.restoration__police-service-research {
-	flex-direction: row;
-	align-items: center;
+		flex-direction: row;
+		align-items: center;
 	}
 }
 @include for-desktop-up {
@@ -326,7 +346,7 @@
 @include for-desktop-up {
 	.restoration__police-service-research-text {
 		max-width: 50ch;
-	}	
+	}
 }
 
 .restoration__police-service-research-icon {
