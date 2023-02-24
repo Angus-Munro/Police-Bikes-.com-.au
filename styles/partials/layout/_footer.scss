@@ -4,6 +4,11 @@
 	background-color: $color-bg-secondary;
 }
 
+.footer__content-wrapper {
+	margin: 0 auto;
+	max-width: 75rem;
+}
+
 .footer__credit {
 	margin: 1rem 0 2rem 0;
 }

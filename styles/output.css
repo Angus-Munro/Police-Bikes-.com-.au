@@ -238,6 +238,11 @@ p {
   background-color: #212121;
 }
 
+.footer__content-wrapper {
+  margin: 0 auto;
+  max-width: 75rem;
+}
+
 .footer__credit {
   margin: 1rem 0 2rem 0;
 }
