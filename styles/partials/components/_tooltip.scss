@@ -3,7 +3,8 @@
 	width: 12rem;
 	border-radius: 1px;
 	visibility: hidden;
-	background-color: $color-button-primary--hover;
+	color: $color-text-secondary;
+	background-color: $color-bg-tertiary;
 	text-align: center;
 	padding: 0.25em;
 	position: absolute;
@@ -40,7 +41,7 @@
 	margin-left: -5px;
 	border-width: 5px;
 	border-style: solid;
-	border-color: transparent transparent $color-button-primary--hover transparent;
+	border-color: transparent transparent $color-bg-tertiary transparent;
 }
 
 .contact-us__email-primary-button-tooltip-text--visible {
