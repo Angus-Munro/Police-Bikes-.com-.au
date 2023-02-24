@@ -42,4 +42,29 @@ $(document).ready(function () {
 		$(".before-after-button").toggleClass("before-after-button--active");
 	}
 	const imageTabAutoSwitcher = setInterval(imageTabToggle, 4000);
+
+	// || Contact-Us copy email to clipboard
+	$(".contact-us__email-primary-button").on("click", function () {
+		let emailAddress = `${$(".contact-us__text-email").text()}`;
+		navigator.clipboard.writeText(emailAddress);
+		toggleTooltip();
+	});
+
+	// Hide tooltip mouseleave event
+	$(".contact-us__email-primary-button").on("mouseleave", function () {
+		removeTooltip();
+	});
+
+	// Toggle Tooltip visible class
+	function toggleTooltip() {
+		$(".contact-us__email-primary-button-tooltip-text").toggleClass(
+			"contact-us__email-primary-button-tooltip-text--visible"
+		);
+	}
+	// Remove Tooltip visible class
+	function removeTooltip() {
+		$(".contact-us__email-primary-button-tooltip-text").removeClass(
+			"contact-us__email-primary-button-tooltip-text--visible"
+		);
+	}
 });

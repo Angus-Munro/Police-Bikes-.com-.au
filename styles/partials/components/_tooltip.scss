@@ -1,0 +1,49 @@
+.contact-us__email-primary-button-tooltip-text {
+	font-size: 1rem;
+	width: 12rem;
+	border-radius: 1px;
+	visibility: hidden;
+	background-color: $color-button-primary--hover;
+	text-align: center;
+	padding: 0.25em;
+	position: absolute;
+	z-index: 1;
+	top: 67.5%;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+// Top offset bug on screen-resize fix
+@include for-tablet-portrait-up {
+	.contact-us__email-primary-button-tooltip-text {
+		top: 69%;
+	}
+}
+@include for-tablet-landscape-up {
+	.contact-us__email-primary-button-tooltip-text {
+		top: 67.5%;
+	}
+}
+@include for-desktop-up {
+	.contact-us__email-primary-button-tooltip-text {
+		top: 66%;
+	}
+}
+//
+
+.contact-us__email-primary-button-tooltip-text::after {
+	content: "";
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent $color-button-primary--hover transparent;
+}
+
+.contact-us__email-primary-button-tooltip-text--visible {
+	visibility: visible;
+	opacity: 1;
+}

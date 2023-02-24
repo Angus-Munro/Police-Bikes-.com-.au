@@ -8,7 +8,7 @@
 }
 .primary-button:hover {
 	color: $color-button-primary;
-	background-color: $color-text-secondary;
+	background-color: $color-button-primary--hover;
 	border: 2px solid $color-button-primary;
 }
 
