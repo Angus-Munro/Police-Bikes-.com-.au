@@ -396,3 +396,22 @@
 	align-items: center;
 	gap: 0.5rem;
 }
+
+.contact-us__styled-circle-group {
+	position: absolute;
+	bottom: 0;
+	right: -5rem;
+}
+@include for-tablet-landscape-up {
+	.contact-us__styled-circle-group {
+		right: -2.5rem;
+	}	
+}
+@include for-desktop-up {
+	.contact-us__styled-circle-group {
+		right: 2.5rem;
+	}	
+}
+.contact-us__styled-circle-group .styled-subcircle-red {
+	transform: translate(.3rem, -5.75rem);
+}

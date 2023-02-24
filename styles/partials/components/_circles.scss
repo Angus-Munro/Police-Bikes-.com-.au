@@ -1,0 +1,12 @@
+.styled-subcircle {
+   border-radius: 50%;
+   height: 100px;
+   width: 100px;
+   border: 10px solid;
+}
+.styled-subcircle-blue {
+   border-color: $color-design-primary;
+}
+.styled-subcircle-red {
+   border-color: $color-design-secondary;
+}

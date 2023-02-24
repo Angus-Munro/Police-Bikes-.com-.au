@@ -565,6 +565,21 @@ a:hover .dropdown-triangle {
   opacity: 1;
 }
 
+.styled-subcircle {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  border: 10px solid;
+}
+
+.styled-subcircle-blue {
+  border-color: rgba(7, 140, 242, 0.7411764706);
+}
+
+.styled-subcircle-red {
+  border-color: rgba(249, 70, 70, 0.7411764706);
+}
+
 .intro-home {
   background: url(../../../img/stock-bike-exhaust.jpg) center/cover no-repeat;
 }
@@ -1006,6 +1021,26 @@ a:hover .dropdown-triangle {
   justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
+}
+
+.contact-us__styled-circle-group {
+  position: absolute;
+  bottom: 0;
+  right: -5rem;
+}
+
+@media (min-width: 900px) {
+  .contact-us__styled-circle-group {
+    right: -2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-us__styled-circle-group {
+    right: 2.5rem;
+  }
+}
+.contact-us__styled-circle-group .styled-subcircle-red {
+  transform: translate(0.3rem, -5.75rem);
 }
 
 /*# sourceMappingURL=output.css.map */
