@@ -1,0 +1,24 @@
+.back-to-top {
+	visibility: hidden;
+	opacity: 0;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding: 0.5rem;
+	z-index: 6;
+	transition: all 200ms ease;
+	background: $color-button-primary;
+	border-radius: 2px;
+}
+@include for-tablet-portrait-up {
+	.back-to-top {
+		bottom: 1rem;
+		right: 1rem;
+		padding: 1rem;
+	}
+}
+
+.back-to-top--visible {
+	visibility: visible;
+	opacity: 1;
+}

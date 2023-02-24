@@ -31,6 +31,24 @@ $(document).ready(function () {
 		);
 	});
 
+	// || Back to top button
+	$(window).on("load", () => {
+		if (document.documentElement.scrollTop > 450) {
+			$(".back-to-top").addClass("back-to-top--visible");
+		}
+	});
+	$(window).on("scroll", () => {
+		if (document.documentElement.scrollTop > 450) {
+			$(".back-to-top").addClass("back-to-top--visible");
+		} else {
+			$(".back-to-top").removeClass("back-to-top--visible");
+		}
+	});
+
+	$(".back-to-top").on("click", () => {
+		$("html, body").animate({ scrollTop: 0 }, 800);
+	});
+
 	// || Before-after Tab Toggle
 	$(".before-after-image, .before-after-button").on("click", function () {
 		clearInterval(imageTabAutoSwitcher);
