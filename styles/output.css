@@ -322,6 +322,7 @@ p {
 .before-after-button {
   padding: 0.5rem;
   border-bottom: 2px solid rgba(255, 255, 255, 0);
+  font-size: 1.2rem;
 }
 
 .before-after-button--active {
@@ -353,6 +354,7 @@ p {
 .before-after-image {
   cursor: pointer;
   border-radius: 3px;
+  border: 1px solid #212121;
   transition: opacity 100ms ease-in-out;
 }
 
