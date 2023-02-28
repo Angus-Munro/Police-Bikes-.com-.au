@@ -221,6 +221,7 @@
 	display: flex;
 	flex-direction: column;
 	max-width: 62.5rem;
+	z-index: 1;
 }
 @include for-tablet-portrait-up {
 	.restoration__image-section {
@@ -264,6 +265,22 @@
 }
 .restoration__divider-image-section .styled-subdivider-red {
 	transform: translateX(-2rem);
+}
+
+.restoration__styled-circle-group {
+	position: absolute;
+	left: 0rem;
+	display: none;
+}
+@include for-desktop-up {
+	.restoration__styled-circle-group {
+		display: initial;
+		left: 10rem;
+	}
+}
+
+.restoration__styled-circle-group .styled-subcircle-blue {
+	transform: translate(0.3rem, -5.75rem);
 }
 
 // Authentic Equipment List

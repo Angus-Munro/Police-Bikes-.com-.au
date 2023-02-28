@@ -870,6 +870,7 @@ a:hover .dropdown-triangle {
   display: flex;
   flex-direction: column;
   max-width: 62.5rem;
+  z-index: 1;
 }
 
 @media (min-width: 600px) {
@@ -917,6 +918,22 @@ a:hover .dropdown-triangle {
 
 .restoration__divider-image-section .styled-subdivider-red {
   transform: translateX(-2rem);
+}
+
+.restoration__styled-circle-group {
+  position: absolute;
+  left: 0rem;
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .restoration__styled-circle-group {
+    display: initial;
+    left: 10rem;
+  }
+}
+.restoration__styled-circle-group .styled-subcircle-blue {
+  transform: translate(0.3rem, -5.75rem);
 }
 
 .restoration__authentic-equipment-list {
