@@ -9,29 +9,17 @@
 	padding: 0.25em;
 	position: absolute;
 	z-index: 1;
-	top: 67.5%;
+	top: 60%;
 	left: 50%;
 	transform: translateX(-50%);
 	opacity: 0;
 	transition: opacity 0.3s;
 }
-// Top offset bug on screen-resize fix
-@include for-tablet-portrait-up {
-	.contact-us__email-primary-button-tooltip-text {
-		top: 69%;
-	}
-}
-@include for-tablet-landscape-up {
-	.contact-us__email-primary-button-tooltip-text {
-		top: 67.5%;
-	}
-}
-@include for-desktop-up {
-	.contact-us__email-primary-button-tooltip-text {
-		top: 66%;
-	}
-}
-//
+ @include for-desktop-up {
+ 	.contact-us__email-primary-button-tooltip-text {
+ 		top: 57.5%;
+ 	}
+ }
 
 .contact-us__email-primary-button-tooltip-text::after {
 	content: "";

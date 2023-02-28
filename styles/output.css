@@ -543,26 +543,16 @@ a:hover .dropdown-triangle {
   padding: 0.25em;
   position: absolute;
   z-index: 1;
-  top: 67.5%;
+  top: 60%;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
   transition: opacity 0.3s;
 }
 
-@media (min-width: 600px) {
-  .contact-us__email-primary-button-tooltip-text {
-    top: 69%;
-  }
-}
-@media (min-width: 900px) {
-  .contact-us__email-primary-button-tooltip-text {
-    top: 67.5%;
-  }
-}
 @media (min-width: 1200px) {
   .contact-us__email-primary-button-tooltip-text {
-    top: 66%;
+    top: 57.5%;
   }
 }
 .contact-us__email-primary-button-tooltip-text::after {
