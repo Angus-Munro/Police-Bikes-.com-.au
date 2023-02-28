@@ -1043,6 +1043,10 @@ a:hover .dropdown-triangle {
   }
 }
 
+.contact-us__text {
+  max-width: 40ch;
+}
+
 .contact-us__email-primary-button {
   display: flex;
   justify-content: space-between;
