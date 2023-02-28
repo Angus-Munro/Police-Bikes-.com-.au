@@ -992,19 +992,15 @@ a:hover .dropdown-triangle {
   flex-direction: column;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
   .restoration__police-service-research {
     flex-direction: row;
     align-items: center;
-  }
-}
-@media (min-width: 1200px) {
-  .restoration__police-service-research {
     gap: 7.5rem;
   }
 }
 .restoration__police-service-research-text {
-  max-width: 75ch;
+  max-width: 88ch;
 }
 
 @media (min-width: 1200px) {

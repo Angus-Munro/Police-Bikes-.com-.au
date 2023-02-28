@@ -328,20 +328,16 @@
 	display: flex;
 	flex-direction: column;
 }
-@include for-tablet-landscape-up {
+@include for-desktop-up {
 	.restoration__police-service-research {
 		flex-direction: row;
 		align-items: center;
-	}
-}
-@include for-desktop-up {
-	.restoration__police-service-research {
 		gap: 7.5rem;
 	}
 }
 
 .restoration__police-service-research-text {
-	max-width: 75ch;
+	max-width: 88ch;
 }
 @include for-desktop-up {
 	.restoration__police-service-research-text {
