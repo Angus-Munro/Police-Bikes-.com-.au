@@ -122,6 +122,21 @@
 	transform: translateX(2rem);
 }
 
+.conversion__styled-square-group {
+	position: absolute;
+	bottom: 2rem;
+	left: 5rem;
+	display: none;
+}
+@include for-big-desktop-up {
+	.conversion__styled-square-group {
+		display: initial;
+	}
+}
+.conversion__styled-square-group .styled-subsquare-red {
+	transform: translate(0.3rem, -5.75rem);
+}
+
 // || Safety
 .safety {
 	@include padding-section(1.5rem, 1rem);

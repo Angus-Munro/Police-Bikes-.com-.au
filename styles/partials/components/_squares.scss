@@ -1,0 +1,11 @@
+.styled-subsquare {
+   height: 100px;
+   width: 100px;
+   border: 10px solid;
+}
+.styled-subsquare-blue {
+   border-color: $color-design-primary;
+}
+.styled-subsquare-red {
+   border-color: $color-design-secondary;
+}
