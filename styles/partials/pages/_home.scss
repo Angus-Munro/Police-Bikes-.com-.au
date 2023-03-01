@@ -94,46 +94,46 @@
 }
 
 // || Conversion
-.conversion {
+.conversion-home {
 	@include padding-section;
 	position: relative;
 }
-.conversion__before-after-label {
+.conversion-home__before-after-label {
 	font-size: 0.8rem;
 }
 
-.conversion__header-divider {
+.conversion-home__header-divider {
 	position: absolute;
 	gap: 1.5rem;
 	top: 2.5rem;
 	left: 15rem;
 }
 @include for-tablet-landscape-up {
-	.conversion__header-divider {
+	.conversion-home__header-divider {
 		left: 25rem;
 	}
 }
 @include for-desktop-up {
-	.conversion__header-divider {
+	.conversion-home__header-divider {
 		left: 35rem;
 	}
 }
-.conversion__header-divider .styled-subdivider-red {
+.conversion-home__header-divider .styled-subdivider-red {
 	transform: translateX(2rem);
 }
 
-.conversion__styled-square-group {
+.conversion-home__styled-square-group {
 	position: absolute;
 	bottom: 2rem;
 	left: 5rem;
 	display: none;
 }
 @include for-big-desktop-up {
-	.conversion__styled-square-group {
+	.conversion-home__styled-square-group {
 		display: initial;
 	}
 }
-.conversion__styled-square-group .styled-subsquare-red {
+.conversion-home__styled-square-group .styled-subsquare-red {
 	transform: translate(0.3rem, -5.75rem);
 }
 
