@@ -660,8 +660,13 @@ a:hover .dropdown-triangle {
 }
 @media (min-width: 900px) {
   .to-gallery-background-wrapper {
-    padding: 5rem 2rem;
+    padding: 3rem 2rem;
   }
+}
+
+.to-gallery__primary-button-link {
+  width: 100%;
+  max-width: 35rem;
 }
 
 .intro-home {
@@ -1201,13 +1206,20 @@ a:hover .dropdown-triangle {
   transform: translate(-0.8rem);
 }
 
-.conversion__primary-button-link {
-  width: 100%;
-  max-width: 35rem;
+.to-gallery__yamahafjr1300 {
+  background: url(../../../img/to-gallery/2019-Yamaha-FJR1300P-Police-Bike1-blue.png) center/cover no-repeat;
 }
 
-.yamahafjr1300__to-gallery {
-  background: url(../../../img/to-gallery/2019-Yamaha-FJR1300P-Police-Bike1-blue.png) center/cover no-repeat;
+.to-gallery__hondast1300 {
+  background: url(../../../img/to-gallery/st1300p-09b-red.png) center/cover no-repeat;
+}
+
+.to-gallery__yamahafjr1300-copy {
+  background: url(../../../img/to-gallery/2019-Yamaha-FJR1300P-Police-Bike1-cyan.png) center/cover no-repeat;
+}
+
+.to-gallery__hondast1300-copy {
+  background: url(../../../img/to-gallery/st1300p-09b-orange.png) center/cover no-repeat;
 }
 
 /*# sourceMappingURL=output.css.map */

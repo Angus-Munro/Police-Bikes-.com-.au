@@ -1,6 +1,11 @@
 .to-gallery-background-wrapper {
-	@include padding-section;
+	@include padding-section($largerScreenTopBottom: 0);
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.to-gallery__primary-button-link {
+	width: 100%;
+	max-width: 35rem;
 }

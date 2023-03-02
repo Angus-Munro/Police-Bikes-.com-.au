@@ -21,11 +21,11 @@
 }
 
 //  Section Padding
-@mixin padding-section($topBottom: 3rem, $leftRight: 2rem) {
+@mixin padding-section($topBottom: 3rem, $leftRight: 2rem, $largerScreenTopBottom: 2rem) {
 	padding: $topBottom $leftRight;
 
 	@include for-tablet-landscape-up {
-		padding: $topBottom + 2rem $leftRight;
+		padding: $topBottom + $largerScreenTopBottom $leftRight;
 	}
 }
 
