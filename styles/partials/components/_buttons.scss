@@ -1,17 +1,24 @@
 .primary-button {
 	background-color: $color-button-primary;
 	color: $color-text-secondary;
-	padding: .5em 2em;
+	padding: 0.5em 2em;
 	font-size: 1rem;
 	border: 2px solid $color-border-transparent;
-	transition: background-color .1s ease-in-out;
+	transition: background-color 0.1s ease-in-out;
+	text-align: center;
 }
 .primary-button:hover {
 	color: $color-button-primary;
 	background-color: $color-button-primary--hover;
 	border: 2px solid $color-button-primary;
 }
+.primary-button:visited {
+	color: $color-text-secondary;
+}
+.primary-button:visited:hover {
+	color: $color-button-primary;
+}
 
 .services__card-button {
-   width: 100%;
+	width: 100%;
 }

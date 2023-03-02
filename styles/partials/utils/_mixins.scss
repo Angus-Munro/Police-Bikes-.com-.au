@@ -35,8 +35,8 @@
 }
 
 // Image Background styles
-@mixin image-background($imgUrl) {
-	background: url(../../../img/#{$imgUrl}) center / cover no-repeat;
+@mixin image-background($imgUrl, $position: center, $size: cover, $repeat: no-repeat, $color: none) {
+	background: url(../../../img/#{$imgUrl}) $position / $size $repeat;
 }
 
 // Navbar element hover styling

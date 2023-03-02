@@ -1,0 +1,44 @@
+// Conversion Gallery Entry
+.conversion-gallery-entry {
+	@include padding-section;
+}
+
+@include for-tablet-landscape-up {
+	.conversion-gallery-entry__header {
+		display: none;
+	}
+}
+
+.conversion-gallery-entry__side-header {
+	display: none;
+	text-align: center;
+}
+@include for-tablet-landscape-up {
+	.conversion-gallery-entry__side-header {
+		display: initial;
+	}
+}
+
+// Styled Divider
+.conversion-gallery-entry__styled-divider {
+	margin: 0.5rem 0;
+}
+.conversion-gallery-entry__styled-divider .styled-subdivider-blue {
+	transform: translate(0.8rem);
+}
+.conversion-gallery-entry__styled-divider .styled-subdivider-red {
+	transform: translate(-0.8rem);
+}
+
+// || To-Gallery Button-Link
+.conversion__primary-button-link {
+	width: 100%;
+	max-width: 35rem;
+}
+
+// || YAMAHAFJR1300 To-Gallery
+.yamahafjr1300__to-gallery {
+	@include image-background(
+		$imgUrl: "to-gallery/2019-Yamaha-FJR1300P-Police-Bike1-blue.png"
+	);
+}
