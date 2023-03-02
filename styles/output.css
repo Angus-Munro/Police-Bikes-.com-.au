@@ -85,12 +85,12 @@ p {
 }
 
 .intro__background-wrapper {
-  padding: 3rem 2rem;
-  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5rem 2rem;
+  background-color: rgba(0, 0, 0, 0.85);
 }
 @media (min-width: 900px) {
   .intro__background-wrapper {
-    padding: 5rem 2rem;
+    padding: 7rem 2rem;
   }
 }
 
@@ -108,6 +108,24 @@ p {
 
 .intro__header {
   max-width: 22ch;
+}
+
+.intro__header-subpage-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.intro__subpage-divider .styled-subdivider {
+  width: 100%;
+}
+
+.intro__subpage-divider .styled-subdivider-blue {
+  background-color: rgba(7, 140, 242, 0.9803921569);
+}
+
+.intro__subpage-divider .styled-subdivider-red {
+  background-color: rgba(249, 70, 70, 0.937254902);
 }
 
 .intro__text {
@@ -651,12 +669,7 @@ a:hover .dropdown-triangle {
 }
 
 .intro__background-wrapper-home {
-  padding: 5rem 2rem;
-}
-@media (min-width: 900px) {
-  .intro__background-wrapper-home {
-    padding: 7rem 2rem;
-  }
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 @media (min-width: 1200px) {
@@ -1146,6 +1159,10 @@ a:hover .dropdown-triangle {
 }
 .contact-us__styled-circle-group .styled-subcircle-red {
   transform: translate(0.3rem, -5.75rem);
+}
+
+.intro-conversion {
+  background: url(../../../img/FJR1300-edited.jpg) center/cover no-repeat;
 }
 
 .conversion-gallery-entry {

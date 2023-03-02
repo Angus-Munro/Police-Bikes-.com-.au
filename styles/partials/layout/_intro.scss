@@ -1,6 +1,6 @@
 .intro__background-wrapper {
-	@include padding-section;
-	background-color: $color-bg-tertiary;
+	@include padding-section($topBottom: 5rem);
+	background-color: $color-bg-tertiary--darker;
 }
 
 .intro__content,
@@ -18,6 +18,23 @@
 .intro__header {
 	max-width: 22ch;
 }
+
+.intro__header-subpage-content-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.intro__subpage-divider .styled-subdivider {
+	width: 100%;
+}
+.intro__subpage-divider .styled-subdivider-blue {
+background-color: $color-design-primary--non-faded;
+}
+.intro__subpage-divider .styled-subdivider-red {
+background-color: $color-design-secondary--non-faded;
+}
+
 .intro__text {
 	max-width: 40ch;
 }

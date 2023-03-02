@@ -5,7 +5,7 @@
 	@include image-background("stock-bike-exhaust.jpg");
 }
 .intro__background-wrapper-home {
-	@include padding-section($topBottom: 5rem);
+	background-color: $color-bg-tertiary;
 }
 @include for-desktop-up {
 	.intro__background-wrapper-home {

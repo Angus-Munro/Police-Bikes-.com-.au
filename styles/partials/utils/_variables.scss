@@ -2,6 +2,7 @@
 $color-bg-primary: #fafafa;
 $color-bg-secondary: #212121;
 $color-bg-tertiary: rgba(0, 0, 0, 0.8);
+$color-bg-tertiary--darker: rgba(0, 0, 0, 0.85);
 $color-bg-tertiary--faded: #181818de;
 $color-bg-quaternary: #e6e6e6;
 $color-bg-accent: #ffffff80;
@@ -19,7 +20,9 @@ $color-button-primary: #078cf2;
 $color-button-primary--hover: #FFFFFF;
 
 $color-design-primary: #078cf2bd;
+$color-design-primary--non-faded: #078cf2fa;
 $color-design-secondary: #f94646bd;
+$color-design-secondary--non-faded: #f94646ef;
 $color-design-tertiary--faded: #21212179;
 
 // Gallery divider section
