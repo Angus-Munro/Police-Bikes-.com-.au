@@ -1,3 +1,10 @@
+// || Gallery page type modifier
+.intro--gallery {
+	position: relative;
+	z-index: 3;
+}
+// 
+
 .intro__background-wrapper {
 	@include padding-section($topBottom: 5rem);
 	background-color: $color-bg-tertiary--darker;
