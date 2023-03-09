@@ -53,6 +53,15 @@ button {
   cursor: pointer;
 }
 
+figure {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
 body {
   font-family: "Inter", sans-serif;
 }
@@ -484,6 +493,128 @@ a:hover .dropdown-triangle {
     width: 30rem;
   }
 }
+.conversion-build-gallery__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.grid-image-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: repeat(13, 1fr);
+  grid-gap: 0.5rem;
+  max-width: 75rem;
+}
+
+@media (min-width: 600px) {
+  .grid-image-gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.span-2x2 {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+@media (min-width: 600px) {
+  .large-span-1x3 {
+    grid-row: span 1;
+    grid-column: span 3;
+  }
+}
+.bike-build-teaser-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bike-build-teaser-section .styled-divider {
+  position: absolute;
+}
+
+.bike-build-teaser-section__styled-divider--1 {
+  top: 0;
+  right: 40%;
+  gap: 1rem;
+  transform: rotate(-45deg) translate(-6rem);
+}
+
+.bike-build-teaser-section__styled-divider--1 .styled-subdivider {
+  width: 100%;
+}
+
+.bike-build-teaser-section__styled-divider--2 {
+  top: 25%;
+  left: 50%;
+  gap: 1rem;
+}
+
+@media (min-width: 600px) {
+  .bike-build-teaser-section__styled-divider--2 {
+    top: 50%;
+  }
+  .bike-build-teaser-section__styled-divider--2 .styled-subdivider {
+    width: 80%;
+  }
+}
+.bike-build-teaser-section__styled-divider--3 {
+  top: 85%;
+  right: 40%;
+  gap: 1rem;
+  transform: rotate(-45deg) translate(-6rem);
+}
+
+@media (min-width: 600px) {
+  .bike-build-teaser-section__styled-divider--3 {
+    display: none;
+  }
+}
+.bike-build-teaser-section__content-wrapper {
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 75rem;
+}
+@media (min-width: 900px) {
+  .bike-build-teaser-section__content-wrapper {
+    padding: 1rem 1rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .bike-build-teaser-section__content-wrapper {
+    padding: 1rem 1rem;
+    flex-direction: row;
+  }
+}
+@media (min-width: 600px) and (min-width: 900px) {
+  .bike-build-teaser-section__content-wrapper {
+    padding: 1rem 1rem;
+  }
+}
+.bike-build-teaser-section__image {
+  position: relative;
+  z-index: 2;
+}
+
+.bike-build-teaser-section__content-item-wrapper-icon {
+  flex: 0 0 auto;
+}
+
+.bike-build-teaser-section__arrow-icon {
+  transform: rotate(90deg);
+}
+
+@media (min-width: 600px) {
+  .bike-build-teaser-section__arrow-icon {
+    transform: rotate(0deg);
+  }
+}
 .intro--gallery {
   position: relative;
   z-index: 3;
@@ -722,92 +853,6 @@ a:hover .dropdown-triangle {
   max-width: 75rem;
 }
 
-.bike-build-teaser-section {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.bike-build-teaser-section .styled-divider {
-  position: absolute;
-}
-
-.bike-build-teaser-section__styled-divider--1 {
-  top: 0;
-  right: 40%;
-  gap: 1rem;
-  transform: rotate(-45deg) translate(-6rem);
-}
-
-.bike-build-teaser-section__styled-divider--1 .styled-subdivider {
-  width: 100%;
-}
-
-.bike-build-teaser-section__styled-divider--2 {
-  top: 25%;
-  left: 50%;
-  gap: 1rem;
-}
-
-@media (min-width: 600px) {
-  .bike-build-teaser-section__styled-divider--2 {
-    top: 50%;
-  }
-  .bike-build-teaser-section__styled-divider--2 .styled-subdivider {
-    width: 80%;
-  }
-}
-.bike-build-teaser-section__styled-divider--3 {
-  top: 85%;
-  right: 40%;
-  gap: 1rem;
-  transform: rotate(-45deg) translate(-6rem);
-}
-
-@media (min-width: 600px) {
-  .bike-build-teaser-section__styled-divider--3 {
-    display: none;
-  }
-}
-.bike-build-teaser-section__content-wrapper {
-  padding: 2rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  max-width: 75rem;
-}
-@media (min-width: 900px) {
-  .bike-build-teaser-section__content-wrapper {
-    padding: 4rem 2rem;
-  }
-}
-
-@media (min-width: 600px) {
-  .bike-build-teaser-section__content-wrapper {
-    flex-direction: row;
-  }
-}
-.bike-build-teaser-section__image {
-  position: relative;
-  z-index: 2;
-}
-
-.bike-build-teaser-section__content-item-wrapper-icon {
-  flex: 0 0 auto;
-}
-
-.bike-build-teaser-section__arrow-icon {
-  transform: rotate(90deg);
-}
-
-@media (min-width: 600px) {
-  .bike-build-teaser-section__arrow-icon {
-    transform: rotate(0deg);
-  }
-}
 .intro-home {
   background: url(../../../img/stock-bike-exhaust.jpg) center/cover no-repeat;
 }
@@ -1363,6 +1408,18 @@ a:hover .dropdown-triangle {
 
 .intro-gallery-yamahafjr1300 {
   background: url(../../../img/conversion-after-black-and-white.jpg) center/cover no-repeat;
+}
+
+.conversion-build-gallery--yamahafjr1300 {
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 900px) {
+  .conversion-build-gallery--yamahafjr1300 {
+    padding: 1rem 1rem;
+  }
 }
 
 .intro-restoration {

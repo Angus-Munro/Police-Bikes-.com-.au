@@ -3,3 +3,10 @@
 	@include image-background($imgUrl: "conversion-after-black-and-white.jpg");
 }
 
+// Conversion-Build-Gallery
+.conversion-build-gallery--yamahafjr1300 {
+	@include padding-section($topBottom: 1rem, $leftRight: 1rem, $largerScreenTopBottom: 0);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
