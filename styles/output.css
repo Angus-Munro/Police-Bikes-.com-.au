@@ -676,6 +676,10 @@ a:hover .dropdown-triangle {
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.25);
 }
 
+.description-content__text {
+  margin: 1rem 0;
+}
+
 .intro {
   position: relative;
   z-index: 3;
@@ -689,6 +693,10 @@ a:hover .dropdown-triangle {
   .intro__background-wrapper {
     padding: 7rem 2rem;
   }
+}
+
+.intro__text {
+  margin-bottom: 0;
 }
 
 .intro__content,
@@ -847,10 +855,6 @@ a:hover .dropdown-triangle {
   color: #FFFFFF;
 }
 
-.description-content__text {
-  margin: 1rem 0;
-}
-
 .footer {
   padding: 1.5rem 1rem;
   color: #e6e6e6;
@@ -937,6 +941,7 @@ a:hover .dropdown-triangle {
 }
 .intro__text-home {
   color: rgba(230, 230, 230, 0.8);
+  margin-bottom: 1rem;
 }
 
 .services {
