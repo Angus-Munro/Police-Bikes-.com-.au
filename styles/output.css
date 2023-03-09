@@ -412,8 +412,8 @@ a:hover .dropdown-triangle {
   visibility: hidden;
   opacity: 0;
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 0.5rem;
+  right: 0.5rem;
   padding: 0.5rem;
   z-index: 6;
   transition: all 200ms ease;
