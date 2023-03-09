@@ -672,6 +672,10 @@ a:hover .dropdown-triangle {
     transform: rotate(0deg);
   }
 }
+.display-image {
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.25);
+}
+
 .intro {
   position: relative;
   z-index: 3;
