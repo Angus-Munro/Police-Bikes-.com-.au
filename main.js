@@ -33,12 +33,12 @@ $(document).ready(function () {
 
 	// || Back to top button
 	$(window).on("load", () => {
-		if (document.documentElement.scrollTop > 450) {
+		if (document.documentElement.scrollTop > 0) {
 			$(".back-to-top").addClass("back-to-top--visible");
 		}
 	});
 	$(window).on("scroll", () => {
-		if (document.documentElement.scrollTop > 450) {
+		if (document.documentElement.scrollTop > 0) {
 			$(".back-to-top").addClass("back-to-top--visible");
 		} else {
 			$(".back-to-top").removeClass("back-to-top--visible");
