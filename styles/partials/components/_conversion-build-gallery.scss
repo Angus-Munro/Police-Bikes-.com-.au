@@ -1,23 +1,23 @@
 .conversion-build-gallery {
-
+	position: relative;
 }
 
+// || Gallery img
 .conversion-build-gallery__img {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
 }
+//
 
-// || Styled dividers
-
-
-// || Grid
+// || Gallery Grid
 .grid-image-gallery {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-auto-rows: repeat(13, 1fr);
 	grid-gap: 0.5rem;
-   max-width: 75rem;
+	max-width: 75rem;
+	z-index: 2;
+	// visibility: hidden;
 }
 @include for-tablet-portrait-up {
 	.grid-image-gallery {
@@ -35,4 +35,53 @@
 		grid-column: span 3;
 	}
 }
-// 
+
+//
+
+// || Styled dividers
+.conversion-build-gallery__styled-divider {
+	position: absolute;
+}
+
+.conversion-build-gallery__styled-divider .styled-subdivider {
+	width: 200%;
+}
+
+.conversion-build-gallery__styled-divider--1 {
+	top: 18%;
+	transform: rotate(45deg);
+}
+.conversion-build-gallery__styled-divider--2 {
+	top: 18%;
+	transform: rotate(-45deg);
+}
+.conversion-build-gallery__styled-divider--3 {
+	top: 40%;
+	transform: rotate(-45deg);
+}
+.conversion-build-gallery__styled-divider--4 {
+	top: 51%;
+	left: 45%;
+	.styled-subcircle {
+		height: 50px;
+		width: 50px;
+		border-width: 8px;
+	}
+	.styled-subcircle-red {
+		transform: translate(0.3rem, -3.25rem);
+	}
+}
+.conversion-build-gallery__styled-divider--5 {
+	top: 65%;
+	transform: rotate(35deg);
+}
+.conversion-build-gallery__styled-divider--6 {
+	top: 85%;
+}
+.conversion-build-gallery__styled-divider--7 {
+	top: 95%;
+	transform: rotate(15deg);
+	gap: 2rem;
+}
+
+//

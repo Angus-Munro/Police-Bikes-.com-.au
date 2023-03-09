@@ -2,6 +2,8 @@
 	padding: 1.5rem 1rem;
 	color: $color-text-tertiary;
 	background-color: $color-bg-secondary;
+	position: relative;
+	z-index: 3;
 }
 
 .footer__content-wrapper {

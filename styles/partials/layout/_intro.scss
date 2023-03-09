@@ -1,9 +1,7 @@
-// || Gallery page type modifier
-.intro--gallery {
+.intro {
 	position: relative;
 	z-index: 3;
 }
-// 
 
 .intro__background-wrapper {
 	@include padding-section($topBottom: 5rem);
@@ -36,10 +34,10 @@
 	width: 100%;
 }
 .intro__subpage-divider .styled-subdivider-blue {
-background-color: $color-design-primary--non-faded;
+	background-color: $color-design-primary--non-faded;
 }
 .intro__subpage-divider .styled-subdivider-red {
-background-color: $color-design-secondary--non-faded;
+	background-color: $color-design-secondary--non-faded;
 }
 
 .intro__text {
