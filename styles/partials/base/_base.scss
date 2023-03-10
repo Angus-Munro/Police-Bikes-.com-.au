@@ -1,3 +1,12 @@
+// || Large Screen Footer Background Fix
+html {
+	background-color: $color-bg-secondary;
+}
+
+body {
+	background-color: $color-bg-primary;
+}
+
 // || Typography
 body {
 	font-family: $font-family;
